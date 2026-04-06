@@ -2,6 +2,20 @@ import type { DataPoint } from '../types'
 import { t } from '../i18n'
 import { useLocale } from './LocaleContext'
 
+function exportCsv(data: DataPoint[]) {
+  const headers = ['date', 'mnav', 'premium_pct', 'btc_price', 'mstr_close', 'mstr_market_cap', 'btc_holdings', 'btc_nav']
+  const rows = data.map(d => headers.map(h => (d as any)[h]))
+  const csv = [headers.join(','), ...rows.map(r => r.join(','))].join('\n')
+  const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' })
+  const url = URL.createObjectURL(blob)
+  const a = document.createElement('a')
+  const today = new Date().toISOString().slice(0, 10)
+  a.href = url
+  a.download = `mnav_data_${today}.csv`
+  a.click()
+  URL.revokeObjectURL(url)
+}
+
 export default function DashboardCards({ data }: { data: DataPoint[] }) {
   const { locale } = useLocale()
   const latest = data[data.length - 1]
@@ -55,8 +69,17 @@ export default function DashboardCards({ data }: { data: DataPoint[] }) {
           <p className={`text-xs mt-1 ${card.color}`}>{card.sub}</p>
         </div>
       ))}
-      <div className="col-span-2 lg:col-span-4 text-right text-xs text-gray-500">
-        {t(locale, 'cards.dataAsOf')} {latest.date} &middot; {data.length} {t(locale, 'header.dataPoints')}
+      <div className="col-span-2 lg:col-span-4 flex items-center justify-between text-xs text-gray-500">
+        <span>
+          {t(locale, 'cards.dataAsOf')} {latest.date} &middot; {data.length} {t(locale, 'header.dataPoints')}
+        </span>
+        <button
+          onClick={() => exportCsv(data)}
+          className="flex items-center gap-1 px-3 py-1.5 bg-[#1a1a1a] border border-[#2a2a2a] rounded-lg text-gray-400 hover:text-white hover:border-orange-500/50 transition-colors text-xs"
+        >
+          <span>📥</span>
+          <span>{t(locale, 'export.csv')}</span>
+        </button>
       </div>
     </div>
   )

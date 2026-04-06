@@ -1,18 +1,22 @@
-import { useEffect, useState } from 'react'
+import { useEffect, useState, useMemo } from 'react'
 import type { MnavData } from './types'
 import { t } from './i18n'
 import { LocaleProvider, useLocale, LocaleSwitcher } from './components/LocaleContext'
 import DashboardCards from './components/DashboardCards'
 import MnavChart from './components/MnavChart'
 import BtcChart from './components/BtcChart'
+import CorrelationChart from './components/CorrelationChart'
+import StatsTable from './components/StatsTable'
 import AiSummary from './components/AiSummary'
 import LiveRefresh from './components/LiveRefresh'
+import DateRangeSelector, { type DateRange, getCutoffDate } from './components/DateRangeSelector'
 
 function Dashboard() {
   const { locale } = useLocale()
   const [mnavData, setMnavData] = useState<MnavData | null>(null)
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
+  const [dateRange, setDateRange] = useState<DateRange>('all')
 
   useEffect(() => {
     fetch('/data/mnav_timeseries.json')
@@ -20,6 +24,16 @@ function Dashboard() {
       .then(data => { setMnavData(data); setLoading(false) })
       .catch(err => { setError(err.message); setLoading(false) })
   }, [])
+
+  // Filter data by date range
+  const filteredData = useMemo(() => {
+    if (!mnavData) return []
+    const { data } = mnavData
+    if (data.length === 0) return data
+    const cutoff = getCutoffDate(dateRange, data[data.length - 1].date)
+    if (!cutoff) return data
+    return data.filter(d => d.date >= cutoff)
+  }, [mnavData, dateRange])
 
   if (loading) {
     return (
@@ -36,7 +50,7 @@ function Dashboard() {
     )
   }
 
-  const { data, metadata } = mnavData
+  const { metadata } = mnavData
 
   return (
     <main className="min-h-screen">
@@ -60,10 +74,21 @@ function Dashboard() {
       </header>
 
       <div className="max-w-7xl mx-auto px-4 py-6">
-        <LiveRefresh latestStatic={data[data.length - 1]} />
-        <DashboardCards data={data} />
-        <MnavChart data={data} />
-        <BtcChart data={data} />
+        <LiveRefresh latestStatic={mnavData.data[mnavData.data.length - 1]} />
+
+        {/* Date Range Selector */}
+        <div className="flex items-center justify-between mb-4">
+          <DateRangeSelector selected={dateRange} onSelect={setDateRange} />
+          <span className="text-xs text-gray-500">
+            {filteredData.length} / {mnavData.data.length} {t(locale, 'header.dataPoints')}
+          </span>
+        </div>
+
+        <DashboardCards data={filteredData} />
+        <MnavChart data={filteredData} />
+        <BtcChart data={filteredData} />
+        <CorrelationChart data={filteredData} />
+        <StatsTable data={filteredData} />
         <AiSummary />
 
         {/* Methodology */}
