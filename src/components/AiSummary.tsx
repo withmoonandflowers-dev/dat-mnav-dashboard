@@ -49,7 +49,7 @@ export default function AiSummary() {
     setLoading(true)
     setError(null)
     try {
-      const resp = await fetch('/.netlify/functions/ai-analysis?locale=' + locale)
+      const resp = await fetch('/api/ai-analysis?locale=' + locale)
       const json: AiResponse = await resp.json()
       if (json.rate_limit) {
         setRateLimit(json.rate_limit)

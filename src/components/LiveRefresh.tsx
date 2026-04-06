@@ -28,7 +28,7 @@ export default function LiveRefresh({ latestStatic }: Props) {
     setLoading(true)
     setError(null)
     try {
-      const resp = await fetch('/.netlify/functions/live-data')
+      const resp = await fetch('/api/live-data')
       const data: LiveApiResponse = await resp.json()
       if (data.success) {
         setLive(data)
