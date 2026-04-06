@@ -1,6 +1,31 @@
 import type { Context } from "@netlify/functions";
 import Anthropic from "@anthropic-ai/sdk";
 
+// --- Rate Limiting (in-memory, resets on cold start / ~10 min idle) ---
+const DAILY_LIMIT = 20; // max AI calls per day globally
+const rateBucket: { date: string; count: number } = { date: '', count: 0 };
+
+function checkRateLimit(): { allowed: boolean; remaining: number } {
+  const today = new Date().toISOString().slice(0, 10);
+  if (rateBucket.date !== today) {
+    rateBucket.date = today;
+    rateBucket.count = 0;
+  }
+  if (rateBucket.count >= DAILY_LIMIT) {
+    return { allowed: false, remaining: 0 };
+  }
+  rateBucket.count++;
+  return { allowed: true, remaining: DAILY_LIMIT - rateBucket.count };
+}
+
+// Language instructions for Claude
+const LANG_MAP: Record<string, string> = {
+  'zh-TW': 'Please respond entirely in Traditional Chinese (繁體中文).',
+  'zh-CN': 'Please respond entirely in Simplified Chinese (简体中文).',
+  'ja': 'Please respond entirely in Japanese (日本語).',
+  'en': 'Please respond in English.',
+};
+
 export default async (req: Request, context: Context) => {
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) {
@@ -10,9 +35,29 @@ export default async (req: Request, context: Context) => {
     );
   }
 
+  // Rate limit check
+  const rateCheck = checkRateLimit();
+  if (!rateCheck.allowed) {
+    return new Response(
+      JSON.stringify({
+        success: false,
+        error: "rate_limit",
+        message: `Daily AI analysis limit reached (${DAILY_LIMIT}/${DAILY_LIMIT}). Resets at midnight UTC.`,
+        remaining: 0,
+        max: DAILY_LIMIT,
+      }),
+      { status: 429, headers: { "Content-Type": "application/json" } }
+    );
+  }
+
+  // Parse locale from query string
+  const url = new URL(req.url);
+  const locale = url.searchParams.get('locale') || 'en';
+  const langInstruction = LANG_MAP[locale] || LANG_MAP['en'];
+
   try {
-    // 1. Fetch live data from our own live-data function
-    const baseUrl = new URL(req.url).origin;
+    // 1. Fetch live data
+    const baseUrl = url.origin;
     const liveResp = await fetch(`${baseUrl}/.netlify/functions/live-data`);
     const liveData = await liveResp.json();
 
@@ -23,12 +68,14 @@ export default async (req: Request, context: Context) => {
       );
     }
 
-    // 2. Build prompt with real data
+    // 2. Build prompt
     const mnavStr = liveData.mnav.value
       ? `${liveData.mnav.value}x (${liveData.mnav.premium_pct >= 0 ? "+" : ""}${liveData.mnav.premium_pct}% ${liveData.mnav.premium_pct >= 0 ? "premium" : "discount"})`
       : "unavailable (MSTR market closed)";
 
     const prompt = `You are a professional crypto-equity analyst. Provide a concise market analysis based on the following REAL-TIME data for Strategy Inc (MSTR), a Digital Asset Treasury company.
+
+${langInstruction}
 
 LIVE DATA (as of ${liveData.timestamp}):
 - BTC Price: $${liveData.btc.price.toLocaleString()} (24h change: ${liveData.btc.change_24h_pct}%)
@@ -41,26 +88,25 @@ LIVE DATA (as of ${liveData.timestamp}):
 
 CONTEXT:
 - mNAV = Market Cap / (BTC Holdings × BTC Price)
-- mNAV > 1.0 = premium (market values company above its BTC), < 1.0 = discount
-- MSTR peaked at ~2.25x mNAV in May 2025, has been declining since
-- mNAV dropped below 1.0x in late 2025, currently in discount territory
-- MSTR acts as leveraged BTC exposure with beta ~1.3-1.4x
+- mNAV > 1.0 = premium, < 1.0 = discount
+- MSTR peaked at ~2.25x mNAV in May 2025, declining since
+- mNAV dropped below 1.0x in late 2025
 
 Provide your analysis in exactly this JSON format (no markdown, pure JSON):
 {
   "headline": "One-line market summary (max 15 words)",
   "sections": [
-    {"title": "Current Valuation", "icon": "📊", "text": "2-3 sentences about current mNAV level and what it means"},
-    {"title": "Market Dynamics", "icon": "📈", "text": "2-3 sentences about BTC price action and MSTR correlation"},
-    {"title": "Risk Assessment", "icon": "⚠️", "text": "2-3 sentences about key risks at current levels"},
-    {"title": "Outlook", "icon": "🔮", "text": "2-3 sentences about potential scenarios ahead"}
+    {"title": "Current Valuation", "icon": "📊", "text": "2-3 sentences about current mNAV level"},
+    {"title": "Market Dynamics", "icon": "📈", "text": "2-3 sentences about BTC price action and MSTR"},
+    {"title": "Risk Assessment", "icon": "⚠️", "text": "2-3 sentences about key risks"},
+    {"title": "Outlook", "icon": "🔮", "text": "2-3 sentences about potential scenarios"}
   ],
-  "data_quality": "Real-time" or "Partial (MSTR market closed)"
+  "data_quality": "Real-time" or "Partial"
 }
 
-IMPORTANT: Every sentence must reference at least one specific number from the data above. Do not use generic language.`;
+IMPORTANT: Every sentence must reference at least one specific number from the data above.`;
 
-    // 3. Call Claude Haiku (cheapest, fastest)
+    // 3. Call Claude Haiku
     const client = new Anthropic({ apiKey });
     const message = await client.messages.create({
       model: "claude-3-haiku-20240307",
@@ -68,13 +114,11 @@ IMPORTANT: Every sentence must reference at least one specific number from the d
       messages: [{ role: "user", content: prompt }],
     });
 
-    // 4. Parse response
     const responseText =
       message.content[0].type === "text" ? message.content[0].text : "";
 
     let analysis;
     try {
-      // Extract JSON from response (Claude sometimes wraps in markdown)
       const jsonMatch = responseText.match(/\{[\s\S]*\}/);
       analysis = jsonMatch ? JSON.parse(jsonMatch[0]) : null;
     } catch {
@@ -86,18 +130,20 @@ IMPORTANT: Every sentence must reference at least one specific number from the d
         success: true,
         timestamp: new Date().toISOString(),
         model: "claude-3-haiku-20240307",
+        locale,
         analysis,
         live_data_used: {
           btc_price: liveData.btc.price,
           mnav: liveData.mnav.value,
           mstr_price: liveData.mstr.price,
         },
+        rate_limit: { remaining: rateCheck.remaining, max: DAILY_LIMIT },
       }),
       {
         status: 200,
         headers: {
           "Content-Type": "application/json",
-          "Cache-Control": "public, max-age=300", // Cache 5 min to limit API costs
+          "Cache-Control": "public, max-age=300",
         },
       }
     );

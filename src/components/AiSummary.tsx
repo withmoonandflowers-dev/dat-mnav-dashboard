@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { t } from '../i18n'
+import { useLocale } from './LocaleContext'
 
 interface AiSection {
   title: string
@@ -20,13 +22,19 @@ interface AiResponse {
     mnav: number | null
     mstr_price: number | null
   }
+  rate_limit?: {
+    remaining: number
+    max: number
+  }
   error?: string
 }
 
 export default function AiSummary() {
+  const { locale } = useLocale()
   const [loading, setLoading] = useState(false)
   const [data, setData] = useState<AiResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
+  const [rateLimit, setRateLimit] = useState<{ remaining: number; max: number } | null>(null)
 
   // Also try to load static fallback
   const [staticData, setStaticData] = useState<any>(null)
@@ -41,11 +49,18 @@ export default function AiSummary() {
     setLoading(true)
     setError(null)
     try {
-      const resp = await fetch('/.netlify/functions/ai-analysis')
+      const resp = await fetch('/.netlify/functions/ai-analysis?locale=' + locale)
       const json: AiResponse = await resp.json()
+      if (json.rate_limit) {
+        setRateLimit(json.rate_limit)
+      }
       if (json.success) {
         setData(json)
       } else {
+        if (json.error === 'rate_limit') {
+          const max = json.rate_limit?.max ?? 0
+          throw new Error(t(locale, 'ai.rateLimitHit', { max }))
+        }
         throw new Error(json.error || 'AI analysis failed')
       }
     } catch (e: any) {
@@ -67,32 +82,39 @@ export default function AiSummary() {
             🤖
           </div>
           <div>
-            <h2 className="text-lg font-semibold">AI Market Analysis</h2>
+            <h2 className="text-lg font-semibold">{t(locale, 'ai.title')}</h2>
             <p className="text-xs text-gray-500">
               {hasLiveAi
-                ? `Live analysis by ${data!.model} · ${new Date(data!.timestamp).toLocaleString()}`
+                ? `${t(locale, 'ai.liveBy')} ${data!.model} · ${new Date(data!.timestamp).toLocaleString()}`
                 : hasStaticAi
-                  ? `Pre-generated analysis · ${new Date(staticData.generated_at).toLocaleDateString()}`
-                  : 'Click to generate real-time analysis with Claude AI'}
+                  ? `${t(locale, 'ai.preGenerated')} · ${new Date(staticData.generated_at).toLocaleDateString()}`
+                  : t(locale, 'ai.clickToGenerate')}
             </p>
           </div>
         </div>
-        <button
-          onClick={fetchAi}
-          disabled={loading}
-          className="px-4 py-2 bg-purple-500/20 border border-purple-500/50 text-purple-400 rounded-lg text-sm font-medium hover:bg-purple-500/30 transition-colors disabled:opacity-50 flex items-center gap-2 shrink-0"
-        >
-          {loading ? (
-            <>
-              <div className="w-4 h-4 border-2 border-purple-400 border-t-transparent rounded-full animate-spin" />
-              Claude is analyzing...
-            </>
-          ) : hasLiveAi ? (
-            '↻ Re-analyze'
-          ) : (
-            '⚡ Generate Live AI Analysis'
+        <div className="flex flex-col items-end gap-1 shrink-0">
+          <button
+            onClick={fetchAi}
+            disabled={loading}
+            className="px-4 py-2 bg-purple-500/20 border border-purple-500/50 text-purple-400 rounded-lg text-sm font-medium hover:bg-purple-500/30 transition-colors disabled:opacity-50 flex items-center gap-2"
+          >
+            {loading ? (
+              <>
+                <div className="w-4 h-4 border-2 border-purple-400 border-t-transparent rounded-full animate-spin" />
+                {t(locale, 'ai.analyzing')}
+              </>
+            ) : hasLiveAi ? (
+              t(locale, 'ai.reAnalyze')
+            ) : (
+              t(locale, 'ai.generate')
+            )}
+          </button>
+          {rateLimit && (
+            <p className="text-xs text-gray-600">
+              {t(locale, 'ai.rateLimit', { remaining: rateLimit.remaining, max: rateLimit.max })}
+            </p>
           )}
-        </button>
+        </div>
       </div>
 
       {/* Live AI headline */}
@@ -100,7 +122,7 @@ export default function AiSummary() {
         <div className="bg-purple-500/10 border border-purple-500/30 rounded-lg p-3 mb-4">
           <p className="text-purple-300 font-medium">{data!.analysis.headline}</p>
           <p className="text-xs text-gray-500 mt-1">
-            Based on BTC ${data!.live_data_used.btc_price?.toLocaleString()} | mNAV {data!.live_data_used.mnav?.toFixed(2)}x | Data: {data!.analysis.data_quality}
+            {t(locale, 'ai.basedOn')} BTC ${data!.live_data_used.btc_price?.toLocaleString()} | mNAV {data!.live_data_used.mnav?.toFixed(2)}x | {t(locale, 'ai.data')}: {data!.analysis.data_quality}
           </p>
         </div>
       )}
@@ -131,7 +153,7 @@ export default function AiSummary() {
             </div>
           ))}
           <p className="text-xs text-gray-600 italic">
-            ↑ Pre-generated static analysis. Click "Generate Live AI Analysis" for real-time Claude analysis.
+            {t(locale, 'ai.staticNote')}
           </p>
         </div>
       )}
@@ -139,7 +161,7 @@ export default function AiSummary() {
       {/* Empty state */}
       {!hasLiveAi && !hasStaticAi && !loading && !error && (
         <p className="text-sm text-gray-500 text-center py-4">
-          Click the button above to generate a real-time AI analysis using Claude
+          {t(locale, 'ai.clickAbove')}
         </p>
       )}
 
@@ -148,13 +170,13 @@ export default function AiSummary() {
         <div className="bg-red-500/10 border border-red-500/30 rounded-lg p-3 mt-3">
           <p className="text-xs text-red-400">⚠ {error}</p>
           <p className="text-xs text-gray-500 mt-1">
-            {hasStaticAi ? 'Showing pre-generated analysis above as fallback.' : 'Static fallback analysis shown if available.'}
+            {hasStaticAi ? t(locale, 'ai.staticNote') : ''}
           </p>
         </div>
       )}
 
       <p className="text-xs text-gray-700 mt-3">
-        Powered by Anthropic Claude API · Not financial advice · Cached 5 min
+        {t(locale, 'ai.poweredBy')}
       </p>
     </div>
   )

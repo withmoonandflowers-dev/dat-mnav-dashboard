@@ -3,6 +3,8 @@ import {
   Tooltip, ResponsiveContainer, ReferenceLine, ReferenceArea
 } from 'recharts'
 import type { DataPoint } from '../types'
+import { t } from '../i18n'
+import { useLocale } from './LocaleContext'
 
 function CustomTooltip({ active, payload }: any) {
   if (!active || !payload?.[0]) return null
@@ -36,6 +38,7 @@ function CustomTooltip({ active, payload }: any) {
 }
 
 export default function MnavChart({ data }: { data: DataPoint[] }) {
+  const { locale } = useLocale()
   const mnavValues = data.map(d => d.mnav)
   const yMin = Math.floor(Math.min(...mnavValues) * 10) / 10 - 0.1
   const yMax = Math.ceil(Math.max(...mnavValues) * 10) / 10 + 0.1
@@ -44,12 +47,12 @@ export default function MnavChart({ data }: { data: DataPoint[] }) {
     <div className="bg-[#141414] border border-[#2a2a2a] rounded-xl p-6 mb-6">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between mb-4 gap-2">
         <div>
-          <h2 className="text-lg font-semibold">mNAV Analysis</h2>
-          <p className="text-sm text-gray-400">Multiple to Net Asset Value (Diluted Shares)</p>
+          <h2 className="text-lg font-semibold">{t(locale, 'chart.mnav.title')}</h2>
+          <p className="text-sm text-gray-400">{t(locale, 'chart.mnav.subtitle')}</p>
         </div>
         <div className="text-right">
-          <p className="text-xs text-gray-500">Formula</p>
-          <p className="text-xs text-gray-400 font-mono">Market Cap / (BTC Holdings x BTC Price)</p>
+          <p className="text-xs text-gray-500">{t(locale, 'chart.mnav.formula')}</p>
+          <p className="text-xs text-gray-400 font-mono">{t(locale, 'chart.mnav.formulaText')}</p>
         </div>
       </div>
 
@@ -75,7 +78,7 @@ export default function MnavChart({ data }: { data: DataPoint[] }) {
             stroke="#f7931a"
             strokeDasharray="8 4"
             strokeWidth={2}
-            label={{ value: '1.0x = Fair Value', position: 'insideTopRight', fill: '#f7931a', fontSize: 11 }}
+            label={{ value: t(locale, 'chart.mnav.fairValue'), position: 'insideTopRight', fill: '#f7931a', fontSize: 11 }}
           />
           <Line
             type="monotone"
@@ -91,15 +94,15 @@ export default function MnavChart({ data }: { data: DataPoint[] }) {
       <div className="flex flex-wrap items-center gap-6 mt-4 text-xs text-gray-500">
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-green-500/20 border border-green-500/50" />
-          <span>&gt;1.0x = Premium</span>
+          <span>{t(locale, 'chart.mnav.premium')}</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-3 h-3 rounded-full bg-red-500/20 border border-red-500/50" />
-          <span>&lt;1.0x = Discount</span>
+          <span>{t(locale, 'chart.mnav.discount')}</span>
         </div>
         <div className="flex items-center gap-2">
           <div className="w-8 h-0 border-t-2 border-dashed border-orange-500" />
-          <span>Fair Value Line</span>
+          <span>{t(locale, 'chart.mnav.fairLine')}</span>
         </div>
       </div>
     </div>

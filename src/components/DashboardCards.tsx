@@ -1,6 +1,9 @@
 import type { DataPoint } from '../types'
+import { t } from '../i18n'
+import { useLocale } from './LocaleContext'
 
 export default function DashboardCards({ data }: { data: DataPoint[] }) {
+  const { locale } = useLocale()
   const latest = data[data.length - 1]
   const prev = data[data.length - 2]
   if (!latest || !prev) return null
@@ -10,30 +13,30 @@ export default function DashboardCards({ data }: { data: DataPoint[] }) {
 
   const cards = [
     {
-      label: 'Current mNAV',
+      label: t(locale, 'cards.currentMnav'),
       value: latest.mnav.toFixed(2) + 'x',
       sub: isPremium
-        ? `+${latest.premium_pct.toFixed(1)}% Premium`
-        : `${latest.premium_pct.toFixed(1)}% Discount`,
+        ? `+${latest.premium_pct.toFixed(1)}% ${t(locale, 'cards.premium')}`
+        : `${latest.premium_pct.toFixed(1)}% ${t(locale, 'cards.discount')}`,
       color: isPremium ? 'text-green-400' : 'text-red-400',
       big: true,
     },
     {
-      label: 'BTC Price',
+      label: t(locale, 'cards.btcPrice'),
       value: `$${latest.btc_price.toLocaleString(undefined, { maximumFractionDigits: 0 })}`,
       sub: `${btcChange >= 0 ? '+' : ''}${btcChange.toFixed(2)}%`,
       color: btcChange >= 0 ? 'text-green-400' : 'text-red-400',
     },
     {
-      label: 'MSTR Market Cap',
+      label: t(locale, 'cards.marketCap'),
       value: `$${(latest.mstr_market_cap / 1e9).toFixed(1)}B`,
-      sub: `Stock: $${latest.mstr_close.toFixed(2)}`,
+      sub: `${t(locale, 'cards.stock')}: $${latest.mstr_close.toFixed(2)}`,
       color: 'text-orange-400',
     },
     {
-      label: 'BTC Holdings',
+      label: t(locale, 'cards.holdings'),
       value: latest.btc_holdings.toLocaleString(),
-      sub: `NAV: $${(latest.btc_nav / 1e9).toFixed(1)}B`,
+      sub: `${t(locale, 'cards.nav')}: $${(latest.btc_nav / 1e9).toFixed(1)}B`,
       color: 'text-orange-400',
     },
   ]
@@ -53,7 +56,7 @@ export default function DashboardCards({ data }: { data: DataPoint[] }) {
         </div>
       ))}
       <div className="col-span-2 lg:col-span-4 text-right text-xs text-gray-500">
-        Data as of {latest.date} &middot; {data.length} data points
+        {t(locale, 'cards.dataAsOf')} {latest.date} &middot; {data.length} {t(locale, 'header.dataPoints')}
       </div>
     </div>
   )

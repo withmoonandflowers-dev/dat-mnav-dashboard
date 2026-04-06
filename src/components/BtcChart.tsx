@@ -3,6 +3,8 @@ import {
   Tooltip, ResponsiveContainer
 } from 'recharts'
 import type { DataPoint } from '../types'
+import { t } from '../i18n'
+import { useLocale } from './LocaleContext'
 
 function BtcTooltip({ active, payload }: any) {
   if (!active || !payload?.[0]) return null
@@ -16,6 +18,7 @@ function BtcTooltip({ active, payload }: any) {
 }
 
 export default function BtcChart({ data }: { data: DataPoint[] }) {
+  const { locale } = useLocale()
   const prices = data.map(d => d.btc_price)
   const yMin = Math.floor(Math.min(...prices) / 10000) * 10000 - 5000
   const yMax = Math.ceil(Math.max(...prices) / 10000) * 10000 + 5000
@@ -23,8 +26,8 @@ export default function BtcChart({ data }: { data: DataPoint[] }) {
   return (
     <div className="bg-[#141414] border border-[#2a2a2a] rounded-xl p-6 mb-6">
       <div className="mb-4">
-        <h2 className="text-lg font-semibold">Bitcoin Price (Correlation View)</h2>
-        <p className="text-sm text-gray-400">Compare with mNAV chart above to observe pro-cyclical behavior</p>
+        <h2 className="text-lg font-semibold">{t(locale, 'chart.btc.title')}</h2>
+        <p className="text-sm text-gray-400">{t(locale, 'chart.btc.subtitle')}</p>
       </div>
       <ResponsiveContainer width="100%" height={250}>
         <AreaChart data={data} margin={{ top: 10, right: 30, left: 10, bottom: 0 }}>

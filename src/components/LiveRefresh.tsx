@@ -1,5 +1,7 @@
 import { useEffect, useState } from 'react'
 import type { DataPoint } from '../types'
+import { t } from '../i18n'
+import { useLocale } from './LocaleContext'
 
 interface LiveApiResponse {
   success: boolean
@@ -17,6 +19,7 @@ interface Props {
 }
 
 export default function LiveRefresh({ latestStatic }: Props) {
+  const { locale } = useLocale()
   const [loading, setLoading] = useState(true)
   const [live, setLive] = useState<LiveApiResponse | null>(null)
   const [error, setError] = useState<string | null>(null)
@@ -57,11 +60,11 @@ export default function LiveRefresh({ latestStatic }: Props) {
           }`} />
           <div>
             <p className="text-sm font-medium">
-              {loading ? 'Connecting to live data...' :
-               isLive ? '● Live Data' : '○ Fallback Mode'}
+              {loading ? t(locale, 'live.connecting') :
+               isLive ? `● ${t(locale, 'live.title')}` : `○ ${t(locale, 'live.fallback')}`}
             </p>
             <p className="text-xs text-gray-500">
-              {loading ? 'Fetching real-time BTC & MSTR prices...' :
+              {loading ? t(locale, 'live.fetchingDesc') :
                isLive ? `${new Date(live!.timestamp).toLocaleString()} · ${live!.mnav.note}` :
                `Static data as of ${latestStatic.date}. ${error}`}
             </p>
@@ -79,7 +82,7 @@ export default function LiveRefresh({ latestStatic }: Props) {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
             </svg>
           )}
-          {loading ? 'Refreshing...' : 'Refresh'}
+          {loading ? t(locale, 'live.refreshing') : t(locale, 'live.refresh')}
         </button>
       </div>
 
@@ -87,18 +90,18 @@ export default function LiveRefresh({ latestStatic }: Props) {
       {isLive && (
         <div className="mt-3 pt-3 border-t border-[#2a2a2a] grid grid-cols-2 sm:grid-cols-5 gap-3 text-sm">
           <div>
-            <p className="text-gray-500 text-xs">Live mNAV</p>
+            <p className="text-gray-500 text-xs">{t(locale, 'live.liveMnav')}</p>
             <p className={`text-xl font-bold ${isPremium ? 'text-green-400' : 'text-red-400'}`}>
               {mnav ? `${mnav.toFixed(2)}x` : 'N/A'}
             </p>
             <p className="text-xs text-gray-600">
               {live!.mnav.premium_pct != null
-                ? `${live!.mnav.premium_pct >= 0 ? '+' : ''}${live!.mnav.premium_pct}% ${isPremium ? 'premium' : 'discount'}`
+                ? `${live!.mnav.premium_pct >= 0 ? '+' : ''}${live!.mnav.premium_pct}% ${isPremium ? t(locale, 'live.premium') : t(locale, 'live.discount')}`
                 : ''}
             </p>
           </div>
           <div>
-            <p className="text-gray-500 text-xs">Live BTC</p>
+            <p className="text-gray-500 text-xs">{t(locale, 'live.liveBtc')}</p>
             <p className="text-white font-semibold">
               ${live!.btc.price.toLocaleString(undefined, { maximumFractionDigits: 0 })}
             </p>
@@ -107,18 +110,18 @@ export default function LiveRefresh({ latestStatic }: Props) {
             </p>
           </div>
           <div>
-            <p className="text-gray-500 text-xs">MSTR Price</p>
+            <p className="text-gray-500 text-xs">{t(locale, 'live.mstrPrice')}</p>
             <p className="text-white font-semibold">
-              {live!.mstr.price ? `$${live!.mstr.price.toFixed(2)}` : 'Closed'}
+              {live!.mstr.price ? `$${live!.mstr.price.toFixed(2)}` : t(locale, 'live.mstrClosed')}
             </p>
           </div>
           <div>
-            <p className="text-gray-500 text-xs">BTC Holdings</p>
+            <p className="text-gray-500 text-xs">{t(locale, 'live.holdings')}</p>
             <p className="text-orange-400 font-semibold">{live!.holdings.btc.toLocaleString()}</p>
-            <p className="text-xs text-gray-600">as of {live!.holdings.as_of}</p>
+            <p className="text-xs text-gray-600">{t(locale, 'live.asOf')} {live!.holdings.as_of}</p>
           </div>
           <div>
-            <p className="text-gray-500 text-xs">Bitcoin NAV</p>
+            <p className="text-gray-500 text-xs">{t(locale, 'live.btcNav')}</p>
             <p className="text-orange-400 font-semibold">${(live!.holdings.btc_nav / 1e9).toFixed(1)}B</p>
           </div>
         </div>
