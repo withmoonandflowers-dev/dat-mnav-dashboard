@@ -1,0 +1,22 @@
+{
+  "generated_at": "2026-04-06T21:39:48.252025",
+  "model": "Analysis based on mNAV time-series data",
+  "analysis": {
+    "current_status": "As of 2026-04-02, Strategy's mNAV stands at 0.89x, representing a 11.3% discount to its Bitcoin holdings. This means the market values the company at $45.3B while its 762,099 BTC are worth $51.1B.",
+    "trend_analysis": "Over the past 30 trading days, mNAV has declined 13.8% (from 1.03x to 0.89x), while BTC price dropped 7.8% (from $72,720 to $67,020). The mNAV compression outpaced BTC's decline, suggesting increasing market skepticism about the leveraged Bitcoin treasury model.",
+    "historical_context": "The mNAV peaked at 2.25x on 2025-05-02 during a period of strong BTC momentum and investor enthusiasm for the DAT strategy. It has since compressed by 61%, crossing below the critical 1.0x threshold on approximately late 2025. The lowest recorded mNAV was 0.84x on 2026-02-05.",
+    "investor_implications": "An mNAV below 1.0x indicates the market values MSTR's equity below its Bitcoin holdings, which theoretically makes the accretive dilution flywheel unsustainable \u2014 new share issuances at a discount to NAV dilute existing shareholders' BTC-per-share. However, this discount also means investors can gain Bitcoin exposure at a discount through MSTR stock compared to buying BTC directly. The current 11.3% discount may attract value-oriented investors who believe mNAV will revert above 1.0x.",
+    "correlation_insight": "mNAV exhibits strong pro-cyclical behavior with Bitcoin. During the observed period, mNAV amplified BTC movements \u2014 rising faster than BTC in bull phases (MSTR beta ~1.3-1.4x) and compressing more sharply in downturns. The 30-day data shows mNAV fell 13.8% while BTC fell only 7.8%, confirming this leveraged exposure characteristic."
+  },
+  "key_metrics": {
+    "current_mnav": 0.8868,
+    "current_btc_price": 67019.99,
+    "btc_holdings": 762099,
+    "peak_mnav": 2.2468,
+    "peak_date": "2025-05-02",
+    "trough_mnav": 0.843,
+    "trough_date": "2026-02-05",
+    "mnav_30d_change_pct": -13.8,
+    "btc_30d_change_pct": -7.8
+  }
+}

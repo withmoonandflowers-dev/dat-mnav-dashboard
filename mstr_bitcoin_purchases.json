@@ -1,0 +1,589 @@
+{
+  "metadata": {
+    "company": "Strategy (formerly MicroStrategy)",
+    "ticker": "MSTR",
+    "data_sources": [
+      "strategy.com/purchases (official press releases)",
+      "saylortracker.com",
+      "bitbo.io/treasuries/microstrategy",
+      "coingecko.com/en/treasuries/companies/strategy",
+      "bitcointreasuries.net/public-companies/strategy"
+    ],
+    "last_confirmed_purchase_date": "2026-03-23",
+    "last_confirmed_total_btc": 762099,
+    "note": "Dates correspond to the announcement/press release dates from Strategy's official 8-K filings. The 850 BTC purchased in Jan 2024 was disclosed on 2024-02-06 as part of Q4 2023 earnings. Some early 2020-2023 transactions use approximate announcement dates where exact 8-K filing dates could not be independently confirmed. The 704 BTC sale in Dec 2022 is included as a negative entry. Holdings of 190,000 at end of 2023 include the 850 BTC bought in Jan 2024 disclosed with Q4 results.",
+    "compiled_date": "2026-04-06"
+  },
+  "purchases": [
+    {
+      "date": "2020-08-11",
+      "btc_purchased": 21454,
+      "total_btc": 21454,
+      "note": "Initial purchase. ~$250M at ~$11,654/BTC"
+    },
+    {
+      "date": "2020-09-14",
+      "btc_purchased": 16796,
+      "total_btc": 38250,
+      "note": "~$175M at ~$10,422/BTC"
+    },
+    {
+      "date": "2020-12-04",
+      "btc_purchased": 2574,
+      "total_btc": 40824,
+      "note": "~$50M purchase"
+    },
+    {
+      "date": "2020-12-21",
+      "btc_purchased": 29646,
+      "total_btc": 70470,
+      "note": "~$650M via convertible note proceeds at ~$21,925/BTC. Year-end total 70,470 BTC for ~$1.125B"
+    },
+    {
+      "date": "2021-01-22",
+      "btc_purchased": 314,
+      "total_btc": 70784,
+      "note": "~$10M purchase"
+    },
+    {
+      "date": "2021-02-02",
+      "btc_purchased": 295,
+      "total_btc": 71079,
+      "note": "~$10M purchase"
+    },
+    {
+      "date": "2021-02-24",
+      "btc_purchased": 19452,
+      "total_btc": 90531,
+      "note": "~$1.026B at ~$52,765/BTC"
+    },
+    {
+      "date": "2021-05-13",
+      "btc_purchased": 271,
+      "total_btc": 91802,
+      "note": "~$15M purchase"
+    },
+    {
+      "date": "2021-05-18",
+      "btc_purchased": 229,
+      "total_btc": 92031,
+      "note": "~$10M purchase"
+    },
+    {
+      "date": "2021-06-21",
+      "btc_purchased": 13005,
+      "total_btc": 105085,
+      "note": "~$489M at ~$37,617/BTC"
+    },
+    {
+      "date": "2021-09-13",
+      "btc_purchased": 5050,
+      "total_btc": 114042,
+      "note": "~$243M at ~$48,099/BTC. Includes additional small purchases in Q3"
+    },
+    {
+      "date": "2021-11-29",
+      "btc_purchased": 7002,
+      "total_btc": 121044,
+      "note": "~$414M purchase"
+    },
+    {
+      "date": "2021-12-09",
+      "btc_purchased": 1434,
+      "total_btc": 122478,
+      "note": "~$82M purchase"
+    },
+    {
+      "date": "2021-12-30",
+      "btc_purchased": 1914,
+      "total_btc": 124391,
+      "note": "~$94M during December dip. Year-end total ~124,391 BTC"
+    },
+    {
+      "date": "2022-01-31",
+      "btc_purchased": 660,
+      "total_btc": 125051,
+      "note": "~$25M at ~$37,865/BTC"
+    },
+    {
+      "date": "2022-04-05",
+      "btc_purchased": 4167,
+      "total_btc": 129218,
+      "note": "~$190M via Silvergate loan"
+    },
+    {
+      "date": "2022-06-29",
+      "btc_purchased": 480,
+      "total_btc": 129699,
+      "note": "~$10M at ~$20,817/BTC"
+    },
+    {
+      "date": "2022-09-20",
+      "btc_purchased": 301,
+      "total_btc": 130000,
+      "note": "~$6M purchase"
+    },
+    {
+      "date": "2022-11-01",
+      "btc_purchased": 2395,
+      "total_btc": 132500,
+      "note": "Nov 1 - Dec 21 purchases at ~$17,871/BTC"
+    },
+    {
+      "date": "2022-12-22",
+      "btc_purchased": -704,
+      "total_btc": 131796,
+      "note": "SOLD 704 BTC at ~$17,800/BTC for tax-loss harvesting"
+    },
+    {
+      "date": "2022-12-24",
+      "btc_purchased": 810,
+      "total_btc": 132500,
+      "note": "Repurchased ~810 BTC. Year-end total ~132,500 BTC for ~$4.03B"
+    },
+    {
+      "date": "2023-03-27",
+      "btc_purchased": 6455,
+      "total_btc": 138955,
+      "note": "Mar 27 - Apr 5 purchases at ~$28,016/BTC. ~$150M"
+    },
+    {
+      "date": "2023-04-05",
+      "btc_purchased": 1045,
+      "total_btc": 140000,
+      "note": "~$29M purchase"
+    },
+    {
+      "date": "2023-06-28",
+      "btc_purchased": 12333,
+      "total_btc": 152333,
+      "note": "Apr-Jun 2023 aggregate purchases at ~$28,136/BTC"
+    },
+    {
+      "date": "2023-07-06",
+      "btc_purchased": 467,
+      "total_btc": 152800,
+      "note": "~$14.4M at ~$30,835/BTC"
+    },
+    {
+      "date": "2023-08-01",
+      "btc_purchased": 467,
+      "total_btc": 153259,
+      "note": "Small additional purchase"
+    },
+    {
+      "date": "2023-09-25",
+      "btc_purchased": 5445,
+      "total_btc": 158245,
+      "note": "~$147.3M at ~$27,053/BTC"
+    },
+    {
+      "date": "2023-11-30",
+      "btc_purchased": 16130,
+      "total_btc": 174530,
+      "note": "~$593.3M at ~$36,785/BTC"
+    },
+    {
+      "date": "2023-12-27",
+      "btc_purchased": 14620,
+      "total_btc": 189150,
+      "note": "~$615M. Year-end total ~189,150 BTC"
+    },
+    {
+      "date": "2024-02-06",
+      "btc_purchased": 850,
+      "total_btc": 190000,
+      "note": "~$37.2M at ~$43,764/BTC. Bought in Jan, disclosed with Q4 2023 results"
+    },
+    {
+      "date": "2024-02-26",
+      "btc_purchased": 3000,
+      "total_btc": 193000,
+      "note": "~$155.4M at ~$51,813/BTC"
+    },
+    {
+      "date": "2024-03-11",
+      "btc_purchased": 12000,
+      "total_btc": 205000,
+      "note": "~$821.7M at ~$68,477/BTC"
+    },
+    {
+      "date": "2024-03-19",
+      "btc_purchased": 9245,
+      "total_btc": 214246,
+      "note": "~$623M at ~$67,382/BTC (includes 33 BTC sub-purchase)"
+    },
+    {
+      "date": "2024-04-29",
+      "btc_purchased": 122,
+      "total_btc": 214400,
+      "note": "~$7.8M at ~$63,934/BTC. Disclosed with Q1 2024 results"
+    },
+    {
+      "date": "2024-06-20",
+      "btc_purchased": 11931,
+      "total_btc": 226331,
+      "note": "~$786M at ~$65,883/BTC"
+    },
+    {
+      "date": "2024-08-01",
+      "btc_purchased": 169,
+      "total_btc": 226500,
+      "note": "~$11.4M at ~$67,455/BTC"
+    },
+    {
+      "date": "2024-09-13",
+      "btc_purchased": 18300,
+      "total_btc": 244800,
+      "note": "~$1.11B at ~$60,408/BTC"
+    },
+    {
+      "date": "2024-09-20",
+      "btc_purchased": 7420,
+      "total_btc": 252220,
+      "note": "~$458.2M at ~$61,750/BTC"
+    },
+    {
+      "date": "2024-11-11",
+      "btc_purchased": 27200,
+      "total_btc": 279420,
+      "note": "~$2.03B at ~$74,463/BTC. Oct 31 - Nov 10 period"
+    },
+    {
+      "date": "2024-11-18",
+      "btc_purchased": 51780,
+      "total_btc": 331200,
+      "note": "~$4.6B at ~$88,627/BTC"
+    },
+    {
+      "date": "2024-11-25",
+      "btc_purchased": 55500,
+      "total_btc": 386700,
+      "note": "~$5.4B at ~$97,862/BTC. Largest single purchase"
+    },
+    {
+      "date": "2024-12-02",
+      "btc_purchased": 15400,
+      "total_btc": 402100,
+      "note": "~$1.5B at ~$95,976/BTC"
+    },
+    {
+      "date": "2024-12-09",
+      "btc_purchased": 21550,
+      "total_btc": 423650,
+      "note": "~$2.1B at ~$98,783/BTC"
+    },
+    {
+      "date": "2024-12-16",
+      "btc_purchased": 15350,
+      "total_btc": 439000,
+      "note": "~$1.5B at ~$100,386/BTC"
+    },
+    {
+      "date": "2024-12-23",
+      "btc_purchased": 5262,
+      "total_btc": 444262,
+      "note": "BTC Yield 47.4% QTD, 73.7% YTD"
+    },
+    {
+      "date": "2024-12-30",
+      "btc_purchased": 2138,
+      "total_btc": 446400,
+      "note": "BTC Yield 47.8% QTD, 74.1% YTD"
+    },
+    {
+      "date": "2025-01-06",
+      "btc_purchased": 1070,
+      "total_btc": 447470,
+      "note": "~$101M at ~$94,004/BTC. Bought Dec 30-31, 2024. BTC Yield 48.0% Q4 2024, 74.3% FY 2024"
+    },
+    {
+      "date": "2025-01-13",
+      "btc_purchased": 2530,
+      "total_btc": 450000,
+      "note": "BTC Yield 0.32% YTD 2025"
+    },
+    {
+      "date": "2025-01-21",
+      "btc_purchased": 11000,
+      "total_btc": 461000,
+      "note": "BTC Yield 1.69% YTD 2025"
+    },
+    {
+      "date": "2025-01-27",
+      "btc_purchased": 10107,
+      "total_btc": 471107,
+      "note": "~$1.1B at ~$105,596/BTC"
+    },
+    {
+      "date": "2025-02-10",
+      "btc_purchased": 7633,
+      "total_btc": 478740,
+      "note": "Official press release date"
+    },
+    {
+      "date": "2025-02-24",
+      "btc_purchased": 20356,
+      "total_btc": 499096,
+      "note": "BTC Yield 6% YTD"
+    },
+    {
+      "date": "2025-03-17",
+      "btc_purchased": 130,
+      "total_btc": 499226,
+      "note": "Small purchase during pause period"
+    },
+    {
+      "date": "2025-03-24",
+      "btc_purchased": 6911,
+      "total_btc": 506137,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-03-31",
+      "btc_purchased": 22048,
+      "total_btc": 528185,
+      "note": "~$1.92B at ~$86,969/BTC. Largest Q1 purchase"
+    },
+    {
+      "date": "2025-04-14",
+      "btc_purchased": 3459,
+      "total_btc": 531644,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-04-21",
+      "btc_purchased": 6556,
+      "total_btc": 538200,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-04-28",
+      "btc_purchased": 15355,
+      "total_btc": 553555,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-05-05",
+      "btc_purchased": 1895,
+      "total_btc": 555450,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-05-12",
+      "btc_purchased": 13390,
+      "total_btc": 568840,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-05-19",
+      "btc_purchased": 7390,
+      "total_btc": 576230,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-05-26",
+      "btc_purchased": 4020,
+      "total_btc": 580250,
+      "note": "~$427M. Official press release"
+    },
+    {
+      "date": "2025-06-09",
+      "btc_purchased": 1045,
+      "total_btc": 582000,
+      "note": "Official press release. Note: ~705 BTC gap between 580250 and 582000 may be from unreported small buys"
+    },
+    {
+      "date": "2025-06-16",
+      "btc_purchased": 10100,
+      "total_btc": 592100,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-06-23",
+      "btc_purchased": 245,
+      "total_btc": 592345,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-06-30",
+      "btc_purchased": 4980,
+      "total_btc": 597325,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-07-14",
+      "btc_purchased": 4225,
+      "total_btc": 601550,
+      "note": "~$472.5M at ~$111,827/BTC"
+    },
+    {
+      "date": "2025-07-21",
+      "btc_purchased": 6220,
+      "total_btc": 607770,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-07-29",
+      "btc_purchased": 21021,
+      "total_btc": 628791,
+      "note": "~$2.46B at ~$117,256/BTC. Funded by STRC IPO proceeds"
+    },
+    {
+      "date": "2025-08-25",
+      "btc_purchased": 3081,
+      "total_btc": 632457,
+      "note": "Official press release. Note: ~585 BTC gap suggests small unreported buys"
+    },
+    {
+      "date": "2025-09-02",
+      "btc_purchased": 4048,
+      "total_btc": 636505,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-09-08",
+      "btc_purchased": 1955,
+      "total_btc": 638460,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-09-15",
+      "btc_purchased": 525,
+      "total_btc": 638985,
+      "note": "~$60.15M at ~$114,562/BTC"
+    },
+    {
+      "date": "2025-09-22",
+      "btc_purchased": 850,
+      "total_btc": 639835,
+      "note": "~$99.74M at ~$117,344/BTC"
+    },
+    {
+      "date": "2025-09-29",
+      "btc_purchased": 196,
+      "total_btc": 640031,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-10-13",
+      "btc_purchased": 220,
+      "total_btc": 640250,
+      "note": "~$27.3M. Official press release"
+    },
+    {
+      "date": "2025-10-20",
+      "btc_purchased": 168,
+      "total_btc": 640418,
+      "note": "~$18.8M at ~$112,051/BTC"
+    },
+    {
+      "date": "2025-10-27",
+      "btc_purchased": 390,
+      "total_btc": 640808,
+      "note": "Official press release"
+    },
+    {
+      "date": "2025-11-10",
+      "btc_purchased": 487,
+      "total_btc": 641692,
+      "note": "Official press release. Note: ~497 BTC gap suggests small buys between 10/27 and 11/10"
+    },
+    {
+      "date": "2025-11-17",
+      "btc_purchased": 8178,
+      "total_btc": 649870,
+      "note": "Official press release. Major purchase after period of small buys"
+    },
+    {
+      "date": "2025-12-08",
+      "btc_purchased": 10624,
+      "total_btc": 660624,
+      "note": "~$963M at ~$90,677/BTC. Note: ~130 BTC gap from 649870"
+    },
+    {
+      "date": "2025-12-15",
+      "btc_purchased": 10645,
+      "total_btc": 671268,
+      "note": "~$980.3M at ~$92,098/BTC"
+    },
+    {
+      "date": "2025-12-29",
+      "btc_purchased": 1229,
+      "total_btc": 672497,
+      "note": "~$108.8M at ~$88,568/BTC"
+    },
+    {
+      "date": "2026-01-05",
+      "btc_purchased": 1286,
+      "total_btc": 673783,
+      "note": "~$116.2M at ~$90,391/BTC. Bought Dec 29 - Jan 4"
+    },
+    {
+      "date": "2026-01-12",
+      "btc_purchased": 13627,
+      "total_btc": 687410,
+      "note": "~$1.25B at ~$91,519/BTC. Largest purchase since July 2025"
+    },
+    {
+      "date": "2026-01-20",
+      "btc_purchased": 22305,
+      "total_btc": 709715,
+      "note": "~$2.13B at ~$95,284/BTC"
+    },
+    {
+      "date": "2026-01-26",
+      "btc_purchased": 2932,
+      "total_btc": 712647,
+      "note": "~$264.1M at ~$90,075/BTC"
+    },
+    {
+      "date": "2026-02-02",
+      "btc_purchased": 855,
+      "total_btc": 713502,
+      "note": "~$75.22M at ~$87,974/BTC"
+    },
+    {
+      "date": "2026-02-09",
+      "btc_purchased": 1142,
+      "total_btc": 714644,
+      "note": "~$90.01M at ~$78,815/BTC"
+    },
+    {
+      "date": "2026-02-17",
+      "btc_purchased": 2486,
+      "total_btc": 717131,
+      "note": "~$168.4M at ~$67,739/BTC (announced 2026-02-18 in some sources)"
+    },
+    {
+      "date": "2026-02-23",
+      "btc_purchased": 592,
+      "total_btc": 717722,
+      "note": "~$39.8M at ~$67,230/BTC"
+    },
+    {
+      "date": "2026-03-02",
+      "btc_purchased": 3015,
+      "total_btc": 720737,
+      "note": "~$204.12M at ~$67,700/BTC"
+    },
+    {
+      "date": "2026-03-09",
+      "btc_purchased": 17994,
+      "total_btc": 738731,
+      "note": "~$1.28B at ~$70,946/BTC"
+    },
+    {
+      "date": "2026-03-16",
+      "btc_purchased": 22337,
+      "total_btc": 761068,
+      "note": "~$1.26B at ~$56,546/BTC"
+    },
+    {
+      "date": "2026-03-23",
+      "btc_purchased": 1031,
+      "total_btc": 762099,
+      "note": "~$76.63M at ~$74,326/BTC. LAST CONFIRMED PURCHASE as of April 6, 2026. Strategy paused weekly purchases near this date."
+    }
+  ]
+}

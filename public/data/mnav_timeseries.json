@@ -1,0 +1,2466 @@
+{
+  "metadata": {
+    "indicator": "mNAV",
+    "formula": "Market Cap / (BTC Holdings x BTC Price)",
+    "company": "Strategy (MSTR)",
+    "data_sources": {
+      "btc_price": "CoinGecko API /coins/bitcoin/market_chart",
+      "mstr_stock": "Yahoo Finance v8 chart API",
+      "btc_holdings": "strategy.com/purchases (manual compilation)"
+    },
+    "generated_at": "2026-04-06T20:39:16.692943",
+    "total_data_points": 245
+  },
+  "data": [
+    {
+      "date": "2025-04-11",
+      "mnav": 2.0544,
+      "premium_pct": 105.44,
+      "btc_price": 83403.67,
+      "mstr_close": 299.98,
+      "mstr_market_cap": 90501658254,
+      "btc_holdings": 528185,
+      "btc_nav": 44052567439
+    },
+    {
+      "date": "2025-04-14",
+      "mnav": 2.0944,
+      "premium_pct": 109.44,
+      "btc_price": 84516.57,
+      "mstr_close": 311.45,
+      "mstr_market_cap": 94105815337,
+      "btc_holdings": 531644,
+      "btc_nav": 44932727341
+    },
+    {
+      "date": "2025-04-15",
+      "mnav": 2.1079,
+      "premium_pct": 110.79,
+      "btc_price": 83820.93,
+      "mstr_close": 310.72,
+      "mstr_market_cap": 93933046058,
+      "btc_holdings": 531644,
+      "btc_nav": 44562894509
+    },
+    {
+      "date": "2025-04-16",
+      "mnav": 2.0992,
+      "premium_pct": 109.92,
+      "btc_price": 84463.89,
+      "mstr_close": 311.66,
+      "mstr_market_cap": 94265162933,
+      "btc_holdings": 531644,
+      "btc_nav": 44904720335
+    },
+    {
+      "date": "2025-04-17",
+      "mnav": 2.1282,
+      "premium_pct": 112.82,
+      "btc_price": 84837.32,
+      "mstr_close": 317.2,
+      "mstr_market_cap": 95989599805,
+      "btc_holdings": 531644,
+      "btc_nav": 45103252154
+    },
+    {
+      "date": "2025-04-21",
+      "mnav": 2.055,
+      "premium_pct": 105.5,
+      "btc_price": 87118.98,
+      "mstr_close": 317.76,
+      "mstr_market_cap": 96354609157,
+      "btc_holdings": 538200,
+      "btc_nav": 46887435036
+    },
+    {
+      "date": "2025-04-22",
+      "mnav": 2.0817,
+      "premium_pct": 108.17,
+      "btc_price": 92890.82,
+      "mstr_close": 343.03,
+      "mstr_market_cap": 104070024483,
+      "btc_holdings": 538200,
+      "btc_nav": 49993839324
+    },
+    {
+      "date": "2025-04-23",
+      "mnav": 2.0793,
+      "premium_pct": 107.93,
+      "btc_price": 93775.8,
+      "mstr_close": 345.73,
+      "mstr_market_cap": 104942352122,
+      "btc_holdings": 538200,
+      "btc_nav": 50470135560
+    },
+    {
+      "date": "2025-04-24",
+      "mnav": 2.1151,
+      "premium_pct": 111.51,
+      "btc_price": 93463.48,
+      "mstr_close": 350.34,
+      "mstr_market_cap": 106395562834,
+      "btc_holdings": 538200,
+      "btc_nav": 50302044936
+    },
+    {
+      "date": "2025-04-25",
+      "mnav": 2.1928,
+      "premium_pct": 119.28,
+      "btc_price": 94928.51,
+      "mstr_close": 368.71,
+      "mstr_market_cap": 112031115073,
+      "btc_holdings": 538200,
+      "btc_nav": 51090524082
+    },
+    {
+      "date": "2025-04-28",
+      "mnav": 2.1392,
+      "premium_pct": 113.92,
+      "btc_price": 94892.32,
+      "mstr_close": 369.25,
+      "mstr_market_cap": 112365615271,
+      "btc_holdings": 553555,
+      "btc_nav": 52528118198
+    },
+    {
+      "date": "2025-04-29",
+      "mnav": 2.2278,
+      "premium_pct": 122.78,
+      "btc_price": 94172.73,
+      "mstr_close": 381.45,
+      "mstr_market_cap": 116136853670,
+      "btc_holdings": 553555,
+      "btc_nav": 52129785555
+    },
+    {
+      "date": "2025-04-30",
+      "mnav": 2.2196,
+      "premium_pct": 121.96,
+      "btc_price": 94239.62,
+      "mstr_close": 380.11,
+      "mstr_market_cap": 115787353612,
+      "btc_holdings": 553555,
+      "btc_nav": 52166812849
+    },
+    {
+      "date": "2025-05-01",
+      "mnav": 2.1806,
+      "premium_pct": 118.06,
+      "btc_price": 96346.44,
+      "mstr_close": 381.6,
+      "mstr_market_cap": 116299938168,
+      "btc_holdings": 553555,
+      "btc_nav": 53333053594
+    },
+    {
+      "date": "2025-05-02",
+      "mnav": 2.2468,
+      "premium_pct": 124.68,
+      "btc_price": 96685.64,
+      "mstr_close": 394.37,
+      "mstr_market_cap": 120252513482,
+      "btc_holdings": 553555,
+      "btc_nav": 53520819450
+    },
+    {
+      "date": "2025-05-05",
+      "mnav": 2.2361,
+      "premium_pct": 123.61,
+      "btc_price": 95036.72,
+      "mstr_close": 386.53,
+      "mstr_market_cap": 118040315236,
+      "btc_holdings": 555450,
+      "btc_nav": 52788146124
+    },
+    {
+      "date": "2025-05-06",
+      "mnav": 2.2028,
+      "premium_pct": 120.28,
+      "btc_price": 96288.69,
+      "mstr_close": 385.6,
+      "mstr_market_cap": 117815630562,
+      "btc_holdings": 555450,
+      "btc_nav": 53483552860
+    },
+    {
+      "date": "2025-05-07",
+      "mnav": 2.2205,
+      "premium_pct": 122.05,
+      "btc_price": 97277.49,
+      "mstr_close": 392.48,
+      "mstr_market_cap": 119978116651,
+      "btc_holdings": 555450,
+      "btc_nav": 54032781820
+    },
+    {
+      "date": "2025-05-08",
+      "mnav": 2.2164,
+      "premium_pct": 121.64,
+      "btc_price": 102946.6,
+      "mstr_close": 414.38,
+      "mstr_market_cap": 126736528880,
+      "btc_holdings": 555450,
+      "btc_nav": 57181688970
+    },
+    {
+      "date": "2025-05-09",
+      "mnav": 2.2289,
+      "premium_pct": 122.89,
+      "btc_price": 102827.53,
+      "mstr_close": 416.03,
+      "mstr_market_cap": 127305180000,
+      "btc_holdings": 555450,
+      "btc_nav": 57115551538
+    },
+    {
+      "date": "2025-05-12",
+      "mnav": 2.1209,
+      "premium_pct": 112.09,
+      "btc_price": 102853.64,
+      "mstr_close": 404.9,
+      "mstr_market_cap": 124086276736,
+      "btc_holdings": 568840,
+      "btc_nav": 58507264578
+    },
+    {
+      "date": "2025-05-13",
+      "mnav": 2.1802,
+      "premium_pct": 118.02,
+      "btc_price": 104235.97,
+      "mstr_close": 421.61,
+      "mstr_market_cap": 129272112048,
+      "btc_holdings": 568840,
+      "btc_nav": 59293589175
+    },
+    {
+      "date": "2025-05-14",
+      "mnav": 2.1715,
+      "premium_pct": 117.15,
+      "btc_price": 103500.56,
+      "mstr_close": 416.75,
+      "mstr_market_cap": 127846076602,
+      "btc_holdings": 568840,
+      "btc_nav": 58875258550
+    },
+    {
+      "date": "2025-05-15",
+      "mnav": 2.0687,
+      "premium_pct": 106.87,
+      "btc_price": 103553.94,
+      "mstr_close": 397.03,
+      "mstr_market_cap": 121857668864,
+      "btc_holdings": 568840,
+      "btc_nav": 58905623230
+    },
+    {
+      "date": "2025-05-16",
+      "mnav": 2.0859,
+      "premium_pct": 108.59,
+      "btc_price": 103467.29,
+      "mstr_close": 399.8,
+      "mstr_market_cap": 122769353815,
+      "btc_holdings": 568840,
+      "btc_nav": 58856333244
+    },
+    {
+      "date": "2025-05-19",
+      "mnav": 2.0902,
+      "premium_pct": 109.02,
+      "btc_price": 105563.47,
+      "mstr_close": 413.42,
+      "mstr_market_cap": 127142550547,
+      "btc_holdings": 576230,
+      "btc_nav": 60828838318
+    },
+    {
+      "date": "2025-05-20",
+      "mnav": 2.0891,
+      "premium_pct": 108.91,
+      "btc_price": 106566.51,
+      "mstr_close": 416.92,
+      "mstr_market_cap": 128283076634,
+      "btc_holdings": 576230,
+      "btc_nav": 61406820057
+    },
+    {
+      "date": "2025-05-21",
+      "mnav": 1.9773,
+      "premium_pct": 97.73,
+      "btc_price": 108802.11,
+      "mstr_close": 402.69,
+      "mstr_market_cap": 123966567352,
+      "btc_holdings": 576230,
+      "btc_nav": 62695039845
+    },
+    {
+      "date": "2025-05-22",
+      "mnav": 1.9219,
+      "premium_pct": 92.19,
+      "btc_price": 111096.22,
+      "mstr_close": 399.46,
+      "mstr_market_cap": 123033680000,
+      "btc_holdings": 576230,
+      "btc_nav": 64016974851
+    },
+    {
+      "date": "2025-05-23",
+      "mnav": 1.8309,
+      "premium_pct": 83.09,
+      "btc_price": 107925.99,
+      "mstr_close": 369.51,
+      "mstr_market_cap": 113865927635,
+      "btc_holdings": 576230,
+      "btc_nav": 62190193218
+    },
+    {
+      "date": "2025-05-27",
+      "mnav": 1.8166,
+      "premium_pct": 81.66,
+      "btc_price": 109024.62,
+      "mstr_close": 372.2,
+      "mstr_market_cap": 114923907406,
+      "btc_holdings": 580250,
+      "btc_nav": 63261535755
+    },
+    {
+      "date": "2025-05-28",
+      "mnav": 1.8051,
+      "premium_pct": 80.51,
+      "btc_price": 107434.48,
+      "mstr_close": 364.25,
+      "mstr_market_cap": 112525230433,
+      "btc_holdings": 580250,
+      "btc_nav": 62338857020
+    },
+    {
+      "date": "2025-05-29",
+      "mnav": 1.8611,
+      "premium_pct": 86.11,
+      "btc_price": 106079.32,
+      "mstr_close": 370.63,
+      "mstr_market_cap": 114553179971,
+      "btc_holdings": 580250,
+      "btc_nav": 61552525430
+    },
+    {
+      "date": "2025-05-30",
+      "mnav": 1.8874,
+      "premium_pct": 88.74,
+      "btc_price": 104205.17,
+      "mstr_close": 369.06,
+      "mstr_market_cap": 114124707607,
+      "btc_holdings": 580250,
+      "btc_nav": 60465049892
+    },
+    {
+      "date": "2025-06-02",
+      "mnav": 1.8799,
+      "premium_pct": 87.99,
+      "btc_price": 105689.76,
+      "mstr_close": 372.27,
+      "mstr_market_cap": 115289155127,
+      "btc_holdings": 580250,
+      "btc_nav": 61326483240
+    },
+    {
+      "date": "2025-06-03",
+      "mnav": 1.9543,
+      "premium_pct": 95.43,
+      "btc_price": 105861.43,
+      "mstr_close": 387.43,
+      "mstr_market_cap": 120043695057,
+      "btc_holdings": 580250,
+      "btc_nav": 61426094757
+    },
+    {
+      "date": "2025-06-04",
+      "mnav": 1.9258,
+      "premium_pct": 92.58,
+      "btc_price": 104893.32,
+      "mstr_close": 378.1,
+      "mstr_market_cap": 117211000000,
+      "btc_holdings": 580250,
+      "btc_nav": 60864348930
+    },
+    {
+      "date": "2025-06-05",
+      "mnav": 1.9406,
+      "premium_pct": 94.06,
+      "btc_price": 101578.2,
+      "mstr_close": 368.79,
+      "mstr_market_cap": 114381636866,
+      "btc_holdings": 580250,
+      "btc_nav": 58940750550
+    },
+    {
+      "date": "2025-06-06",
+      "mnav": 1.9171,
+      "premium_pct": 91.71,
+      "btc_price": 104461.53,
+      "mstr_close": 374.47,
+      "mstr_market_cap": 116200921423,
+      "btc_holdings": 580250,
+      "btc_nav": 60613802782
+    },
+    {
+      "date": "2025-06-09",
+      "mnav": 1.9001,
+      "premium_pct": 90.01,
+      "btc_price": 110191.91,
+      "mstr_close": 392.12,
+      "mstr_market_cap": 121858830468,
+      "btc_holdings": 582000,
+      "btc_nav": 64131691620
+    },
+    {
+      "date": "2025-06-10",
+      "mnav": 1.9042,
+      "premium_pct": 90.42,
+      "btc_price": 109750.11,
+      "mstr_close": 391.18,
+      "mstr_market_cap": 121626888870,
+      "btc_holdings": 582000,
+      "btc_nav": 63874564020
+    },
+    {
+      "date": "2025-06-11",
+      "mnav": 1.9084,
+      "premium_pct": 90.84,
+      "btc_price": 108421.48,
+      "mstr_close": 387.11,
+      "mstr_market_cap": 120420987663,
+      "btc_holdings": 582000,
+      "btc_nav": 63101301360
+    },
+    {
+      "date": "2025-06-12",
+      "mnav": 1.9178,
+      "premium_pct": 91.78,
+      "btc_price": 105893.4,
+      "mstr_close": 379.76,
+      "mstr_market_cap": 118192996835,
+      "btc_holdings": 582000,
+      "btc_nav": 61629958800
+    },
+    {
+      "date": "2025-06-13",
+      "mnav": 1.936,
+      "premium_pct": 93.6,
+      "btc_price": 105807.38,
+      "mstr_close": 382.87,
+      "mstr_market_cap": 119219827545,
+      "btc_holdings": 582000,
+      "btc_nav": 61579895160
+    },
+    {
+      "date": "2025-06-16",
+      "mnav": 1.8691,
+      "premium_pct": 86.91,
+      "btc_price": 107711.8,
+      "mstr_close": 382.25,
+      "mstr_market_cap": 119203191984,
+      "btc_holdings": 592100,
+      "btc_nav": 63776156780
+    },
+    {
+      "date": "2025-06-17",
+      "mnav": 1.8933,
+      "premium_pct": 89.33,
+      "btc_price": 104416.64,
+      "mstr_close": 375.18,
+      "mstr_market_cap": 117056160000,
+      "btc_holdings": 592100,
+      "btc_nav": 61825092544
+    },
+    {
+      "date": "2025-06-18",
+      "mnav": 1.8542,
+      "premium_pct": 85.42,
+      "btc_price": 104927.54,
+      "mstr_close": 369.03,
+      "mstr_market_cap": 115194133789,
+      "btc_holdings": 592100,
+      "btc_nav": 62127596434
+    },
+    {
+      "date": "2025-06-20",
+      "mnav": 1.8923,
+      "premium_pct": 89.23,
+      "btc_price": 103098.71,
+      "mstr_close": 369.7,
+      "mstr_market_cap": 115517030599,
+      "btc_holdings": 592100,
+      "btc_nav": 61044746191
+    },
+    {
+      "date": "2025-06-23",
+      "mnav": 1.8385,
+      "premium_pct": 83.85,
+      "btc_price": 105508.54,
+      "mstr_close": 367.18,
+      "mstr_market_cap": 114899095046,
+      "btc_holdings": 592345,
+      "btc_nav": 62497456126
+    },
+    {
+      "date": "2025-06-24",
+      "mnav": 1.8794,
+      "premium_pct": 87.94,
+      "btc_price": 106028.46,
+      "mstr_close": 377.02,
+      "mstr_market_cap": 118036261509,
+      "btc_holdings": 592345,
+      "btc_nav": 62805428139
+    },
+    {
+      "date": "2025-06-25",
+      "mnav": 1.9148,
+      "premium_pct": 91.48,
+      "btc_price": 107338.53,
+      "mstr_close": 388.67,
+      "mstr_market_cap": 121743402987,
+      "btc_holdings": 592345,
+      "btc_nav": 63581441553
+    },
+    {
+      "date": "2025-06-26",
+      "mnav": 1.9102,
+      "premium_pct": 91.02,
+      "btc_price": 107027.69,
+      "mstr_close": 386.44,
+      "mstr_market_cap": 121104350621,
+      "btc_holdings": 592345,
+      "btc_nav": 63397317033
+    },
+    {
+      "date": "2025-06-27",
+      "mnav": 1.8962,
+      "premium_pct": 89.62,
+      "btc_price": 107156.19,
+      "mstr_close": 383.88,
+      "mstr_market_cap": 120361144409,
+      "btc_holdings": 592345,
+      "btc_nav": 63473433366
+    },
+    {
+      "date": "2025-06-30",
+      "mnav": 1.9831,
+      "premium_pct": 98.31,
+      "btc_price": 107151.55,
+      "mstr_close": 404.23,
+      "mstr_market_cap": 126928220000,
+      "btc_holdings": 597325,
+      "btc_nav": 64004299604
+    },
+    {
+      "date": "2025-07-01",
+      "mnav": 1.8564,
+      "premium_pct": 85.64,
+      "btc_price": 105729.3,
+      "mstr_close": 373.3,
+      "mstr_market_cap": 117240545506,
+      "btc_holdings": 597325,
+      "btc_nav": 63154754122
+    },
+    {
+      "date": "2025-07-02",
+      "mnav": 1.9378,
+      "premium_pct": 93.78,
+      "btc_price": 109172.68,
+      "mstr_close": 402.28,
+      "mstr_market_cap": 126368390990,
+      "btc_holdings": 597325,
+      "btc_nav": 65211571081
+    },
+    {
+      "date": "2025-07-03",
+      "mnav": 1.9364,
+      "premium_pct": 93.64,
+      "btc_price": 109740.88,
+      "mstr_close": 403.99,
+      "mstr_market_cap": 126931901451,
+      "btc_holdings": 597325,
+      "btc_nav": 65550971146
+    },
+    {
+      "date": "2025-07-07",
+      "mnav": 1.9281,
+      "premium_pct": 92.81,
+      "btc_price": 108032.89,
+      "mstr_close": 395.67,
+      "mstr_market_cap": 124421011664,
+      "btc_holdings": 597325,
+      "btc_nav": 64530746019
+    },
+    {
+      "date": "2025-07-08",
+      "mnav": 1.9189,
+      "premium_pct": 91.89,
+      "btc_price": 108920.19,
+      "mstr_close": 396.94,
+      "mstr_market_cap": 124846259079,
+      "btc_holdings": 597325,
+      "btc_nav": 65060752492
+    },
+    {
+      "date": "2025-07-09",
+      "mnav": 1.9642,
+      "premium_pct": 96.42,
+      "btc_price": 111385.38,
+      "mstr_close": 415.41,
+      "mstr_market_cap": 130682567392,
+      "btc_holdings": 597325,
+      "btc_nav": 66533272108
+    },
+    {
+      "date": "2025-07-10",
+      "mnav": 2.0007,
+      "premium_pct": 100.07,
+      "btc_price": 111039.24,
+      "mstr_close": 421.74,
+      "mstr_market_cap": 132701407441,
+      "btc_holdings": 597325,
+      "btc_nav": 66326514033
+    },
+    {
+      "date": "2025-07-11",
+      "mnav": 1.9468,
+      "premium_pct": 94.68,
+      "btc_price": 117613.82,
+      "mstr_close": 434.58,
+      "mstr_market_cap": 136769883781,
+      "btc_holdings": 597325,
+      "btc_nav": 70253675032
+    },
+    {
+      "date": "2025-07-14",
+      "mnav": 1.9662,
+      "premium_pct": 96.62,
+      "btc_price": 120085.43,
+      "mstr_close": 451.02,
+      "mstr_market_cap": 142032080654,
+      "btc_holdings": 601550,
+      "btc_nav": 72237390416
+    },
+    {
+      "date": "2025-07-15",
+      "mnav": 1.9676,
+      "premium_pct": 96.76,
+      "btc_price": 117703.39,
+      "mstr_close": 442.31,
+      "mstr_market_cap": 139318034181,
+      "btc_holdings": 601550,
+      "btc_nav": 70804474254
+    },
+    {
+      "date": "2025-07-16",
+      "mnav": 2.0107,
+      "premium_pct": 101.07,
+      "btc_price": 118745.98,
+      "mstr_close": 455.9,
+      "mstr_market_cap": 143628321620,
+      "btc_holdings": 601550,
+      "btc_nav": 71431644269
+    },
+    {
+      "date": "2025-07-17",
+      "mnav": 1.9719,
+      "premium_pct": 97.19,
+      "btc_price": 119897.28,
+      "mstr_close": 451.34,
+      "mstr_market_cap": 142221158401,
+      "btc_holdings": 601550,
+      "btc_nav": 72124208784
+    },
+    {
+      "date": "2025-07-18",
+      "mnav": 1.8833,
+      "premium_pct": 88.33,
+      "btc_price": 117737.83,
+      "mstr_close": 423.22,
+      "mstr_market_cap": 133387903460,
+      "btc_holdings": 601550,
+      "btc_nav": 70825191636
+    },
+    {
+      "date": "2025-07-21",
+      "mnav": 1.8826,
+      "premium_pct": 88.26,
+      "btc_price": 117496.58,
+      "mstr_close": 426.28,
+      "mstr_market_cap": 134435738168,
+      "btc_holdings": 607770,
+      "btc_nav": 71410896427
+    },
+    {
+      "date": "2025-07-22",
+      "mnav": 1.8456,
+      "premium_pct": 84.56,
+      "btc_price": 119905.34,
+      "mstr_close": 426.4,
+      "mstr_market_cap": 134501391045,
+      "btc_holdings": 607770,
+      "btc_nav": 72874868492
+    },
+    {
+      "date": "2025-07-23",
+      "mnav": 1.8058,
+      "premium_pct": 80.58,
+      "btc_price": 118632.49,
+      "mstr_close": 412.67,
+      "mstr_market_cap": 130197385000,
+      "btc_holdings": 607770,
+      "btc_nav": 72101268447
+    },
+    {
+      "date": "2025-07-24",
+      "mnav": 1.8206,
+      "premium_pct": 82.06,
+      "btc_price": 118328.21,
+      "mstr_close": 414.92,
+      "mstr_market_cap": 130934319838,
+      "btc_holdings": 607770,
+      "btc_nav": 71916336192
+    },
+    {
+      "date": "2025-07-25",
+      "mnav": 1.7969,
+      "premium_pct": 79.69,
+      "btc_price": 117306.18,
+      "mstr_close": 405.89,
+      "mstr_market_cap": 128111236856,
+      "btc_holdings": 607770,
+      "btc_nav": 71295177019
+    },
+    {
+      "date": "2025-07-28",
+      "mnav": 1.7796,
+      "premium_pct": 77.96,
+      "btc_price": 117911.76,
+      "mstr_close": 403.8,
+      "mstr_market_cap": 127530573527,
+      "btc_holdings": 607770,
+      "btc_nav": 71663230375
+    },
+    {
+      "date": "2025-07-29",
+      "mnav": 1.683,
+      "premium_pct": 68.3,
+      "btc_price": 117803.59,
+      "mstr_close": 394.66,
+      "mstr_market_cap": 124669662037,
+      "btc_holdings": 628791,
+      "btc_nav": 74073837160
+    },
+    {
+      "date": "2025-07-30",
+      "mnav": 1.6899,
+      "premium_pct": 68.99,
+      "btc_price": 117460.73,
+      "mstr_close": 395.04,
+      "mstr_market_cap": 124815464056,
+      "btc_holdings": 628791,
+      "btc_nav": 73858249877
+    },
+    {
+      "date": "2025-07-31",
+      "mnav": 1.7394,
+      "premium_pct": 73.94,
+      "btc_price": 116112.83,
+      "mstr_close": 401.86,
+      "mstr_market_cap": 126996496035,
+      "btc_holdings": 628791,
+      "btc_nav": 73010702489
+    },
+    {
+      "date": "2025-08-01",
+      "mnav": 1.63,
+      "premium_pct": 63.0,
+      "btc_price": 113069.93,
+      "mstr_close": 366.63,
+      "mstr_market_cap": 115886960678,
+      "btc_holdings": 628791,
+      "btc_nav": 71097354355
+    },
+    {
+      "date": "2025-08-04",
+      "mnav": 1.6982,
+      "premium_pct": 69.82,
+      "btc_price": 115291.22,
+      "mstr_close": 389.24,
+      "mstr_market_cap": 123109842338,
+      "btc_holdings": 628791,
+      "btc_nav": 72494081515
+    },
+    {
+      "date": "2025-08-05",
+      "mnav": 1.6576,
+      "premium_pct": 65.76,
+      "btc_price": 113954.92,
+      "mstr_close": 375.46,
+      "mstr_market_cap": 118775954750,
+      "btc_holdings": 628791,
+      "btc_nav": 71653828102
+    },
+    {
+      "date": "2025-08-06",
+      "mnav": 1.6758,
+      "premium_pct": 67.58,
+      "btc_price": 115132.55,
+      "mstr_close": 383.41,
+      "mstr_market_cap": 121315924817,
+      "btc_holdings": 628791,
+      "btc_nav": 72394311247
+    },
+    {
+      "date": "2025-08-07",
+      "mnav": 1.7206,
+      "premium_pct": 72.06,
+      "btc_price": 117596.49,
+      "mstr_close": 402.01,
+      "mstr_market_cap": 127227425303,
+      "btc_holdings": 628791,
+      "btc_nav": 73943614544
+    },
+    {
+      "date": "2025-08-08",
+      "mnav": 1.7017,
+      "premium_pct": 70.17,
+      "btc_price": 116895.02,
+      "mstr_close": 395.13,
+      "mstr_market_cap": 125075824462,
+      "btc_holdings": 628791,
+      "btc_nav": 73502536521
+    },
+    {
+      "date": "2025-08-11",
+      "mnav": 1.6969,
+      "premium_pct": 69.69,
+      "btc_price": 118817.46,
+      "mstr_close": 400.25,
+      "mstr_market_cap": 126774836782,
+      "btc_holdings": 628791,
+      "btc_nav": 74711349491
+    },
+    {
+      "date": "2025-08-12",
+      "mnav": 1.6559,
+      "premium_pct": 65.59,
+      "btc_price": 119999.16,
+      "mstr_close": 394.39,
+      "mstr_market_cap": 124944466413,
+      "btc_holdings": 628791,
+      "btc_nav": 75454391816
+    },
+    {
+      "date": "2025-08-13",
+      "mnav": 1.5966,
+      "premium_pct": 59.66,
+      "btc_price": 123066.19,
+      "mstr_close": 389.9,
+      "mstr_market_cap": 123547443394,
+      "btc_holdings": 628791,
+      "btc_nav": 77382912676
+    },
+    {
+      "date": "2025-08-14",
+      "mnav": 1.5886,
+      "premium_pct": 58.86,
+      "btc_price": 118327.47,
+      "mstr_close": 372.94,
+      "mstr_market_cap": 118197657599,
+      "btc_holdings": 628791,
+      "btc_nav": 74403248189
+    },
+    {
+      "date": "2025-08-15",
+      "mnav": 1.5676,
+      "premium_pct": 56.76,
+      "btc_price": 117805.21,
+      "mstr_close": 366.32,
+      "mstr_market_cap": 116123440000,
+      "btc_holdings": 628791,
+      "btc_nav": 74074855801
+    },
+    {
+      "date": "2025-08-18",
+      "mnav": 1.5752,
+      "premium_pct": 57.52,
+      "btc_price": 116445.12,
+      "mstr_close": 363.6,
+      "mstr_market_cap": 115332339067,
+      "btc_holdings": 628791,
+      "btc_nav": 73219643450
+    },
+    {
+      "date": "2025-08-19",
+      "mnav": 1.5006,
+      "premium_pct": 50.06,
+      "btc_price": 113170.11,
+      "mstr_close": 336.57,
+      "mstr_market_cap": 106780490679,
+      "btc_holdings": 628791,
+      "btc_nav": 71160346637
+    },
+    {
+      "date": "2025-08-20",
+      "mnav": 1.5166,
+      "premium_pct": 51.66,
+      "btc_price": 114590.45,
+      "mstr_close": 344.37,
+      "mstr_market_cap": 109277584236,
+      "btc_holdings": 628791,
+      "btc_nav": 72053443646
+    },
+    {
+      "date": "2025-08-21",
+      "mnav": 1.5151,
+      "premium_pct": 51.51,
+      "btc_price": 112468.85,
+      "mstr_close": 337.58,
+      "mstr_market_cap": 107144956404,
+      "btc_holdings": 628791,
+      "btc_nav": 70719400660
+    },
+    {
+      "date": "2025-08-22",
+      "mnav": 1.5495,
+      "premium_pct": 54.95,
+      "btc_price": 116690.83,
+      "mstr_close": 358.13,
+      "mstr_market_cap": 113690703866,
+      "btc_holdings": 628791,
+      "btc_nav": 73374143687
+    },
+    {
+      "date": "2025-08-25",
+      "mnav": 1.5636,
+      "premium_pct": 56.36,
+      "btc_price": 110239.02,
+      "mstr_close": 343.2,
+      "mstr_market_cap": 109018225774,
+      "btc_holdings": 632457,
+      "btc_nav": 69721439872
+    },
+    {
+      "date": "2025-08-26",
+      "mnav": 1.5775,
+      "premium_pct": 57.75,
+      "btc_price": 111889.77,
+      "mstr_close": 351.36,
+      "mstr_market_cap": 111633182502,
+      "btc_holdings": 632457,
+      "btc_nav": 70765468265
+    },
+    {
+      "date": "2025-08-27",
+      "mnav": 1.5423,
+      "premium_pct": 54.23,
+      "btc_price": 111438.43,
+      "mstr_close": 342.06,
+      "mstr_market_cap": 108700718892,
+      "btc_holdings": 632457,
+      "btc_nav": 70480015123
+    },
+    {
+      "date": "2025-08-28",
+      "mnav": 1.5149,
+      "premium_pct": 51.49,
+      "btc_price": 112406.37,
+      "mstr_close": 338.84,
+      "mstr_market_cap": 107699557362,
+      "btc_holdings": 632457,
+      "btc_nav": 71092195551
+    },
+    {
+      "date": "2025-08-29",
+      "mnav": 1.5526,
+      "premium_pct": 55.26,
+      "btc_price": 108268.42,
+      "mstr_close": 334.41,
+      "mstr_market_cap": 106313300710,
+      "btc_holdings": 632457,
+      "btc_nav": 68475120108
+    },
+    {
+      "date": "2025-09-02",
+      "mnav": 1.5355,
+      "premium_pct": 53.55,
+      "btc_price": 111215.74,
+      "mstr_close": 341.62,
+      "mstr_market_cap": 108694572159,
+      "btc_holdings": 636505,
+      "btc_nav": 70789374589
+    },
+    {
+      "date": "2025-09-03",
+      "mnav": 1.4749,
+      "premium_pct": 47.49,
+      "btc_price": 111953.7,
+      "mstr_close": 330.26,
+      "mstr_market_cap": 105101655074,
+      "btc_holdings": 636505,
+      "btc_nav": 71259089818
+    },
+    {
+      "date": "2025-09-04",
+      "mnav": 1.4694,
+      "premium_pct": 46.94,
+      "btc_price": 111490.51,
+      "mstr_close": 327.59,
+      "mstr_market_cap": 104273321034,
+      "btc_holdings": 636505,
+      "btc_nav": 70964267068
+    },
+    {
+      "date": "2025-09-05",
+      "mnav": 1.516,
+      "premium_pct": 51.6,
+      "btc_price": 110813.81,
+      "mstr_close": 335.87,
+      "mstr_market_cap": 106930785797,
+      "btc_holdings": 636505,
+      "btc_nav": 70533544134
+    },
+    {
+      "date": "2025-09-08",
+      "mnav": 1.4668,
+      "premium_pct": 46.68,
+      "btc_price": 112223.04,
+      "mstr_close": 329.9,
+      "mstr_market_cap": 105094665088,
+      "btc_holdings": 638460,
+      "btc_nav": 71649922118
+    },
+    {
+      "date": "2025-09-09",
+      "mnav": 1.4702,
+      "premium_pct": 47.02,
+      "btc_price": 111518.1,
+      "mstr_close": 328.53,
+      "mstr_market_cap": 104679656482,
+      "btc_holdings": 638460,
+      "btc_nav": 71199846126
+    },
+    {
+      "date": "2025-09-10",
+      "mnav": 1.4302,
+      "premium_pct": 43.02,
+      "btc_price": 113935.6,
+      "mstr_close": 326.45,
+      "mstr_market_cap": 104038195595,
+      "btc_holdings": 638460,
+      "btc_nav": 72743323176
+    },
+    {
+      "date": "2025-09-11",
+      "mnav": 1.4123,
+      "premium_pct": 41.23,
+      "btc_price": 115251.55,
+      "mstr_close": 326.02,
+      "mstr_market_cap": 103922418511,
+      "btc_holdings": 638460,
+      "btc_nav": 73583504613
+    },
+    {
+      "date": "2025-09-12",
+      "mnav": 1.4256,
+      "premium_pct": 42.56,
+      "btc_price": 116094.99,
+      "mstr_close": 331.44,
+      "mstr_market_cap": 105671717944,
+      "btc_holdings": 638460,
+      "btc_nav": 74122007315
+    },
+    {
+      "date": "2025-09-15",
+      "mnav": 1.4194,
+      "premium_pct": 41.94,
+      "btc_price": 115299.78,
+      "mstr_close": 327.79,
+      "mstr_market_cap": 104572135827,
+      "btc_holdings": 638985,
+      "btc_nav": 73674829923
+    },
+    {
+      "date": "2025-09-16",
+      "mnav": 1.4317,
+      "premium_pct": 43.17,
+      "btc_price": 116872.97,
+      "mstr_close": 335.09,
+      "mstr_market_cap": 106922848086,
+      "btc_holdings": 638985,
+      "btc_nav": 74680074735
+    },
+    {
+      "date": "2025-09-17",
+      "mnav": 1.4092,
+      "premium_pct": 40.92,
+      "btc_price": 116863.39,
+      "mstr_close": 329.71,
+      "mstr_market_cap": 105227662960,
+      "btc_holdings": 638985,
+      "btc_nav": 74673953259
+    },
+    {
+      "date": "2025-09-18",
+      "mnav": 1.4913,
+      "premium_pct": 49.13,
+      "btc_price": 116948.59,
+      "mstr_close": 349.12,
+      "mstr_market_cap": 111445175546,
+      "btc_holdings": 638985,
+      "btc_nav": 74728394781
+    },
+    {
+      "date": "2025-09-19",
+      "mnav": 1.4895,
+      "premium_pct": 48.95,
+      "btc_price": 115650.54,
+      "mstr_close": 344.75,
+      "mstr_market_cap": 110072679108,
+      "btc_holdings": 638985,
+      "btc_nav": 73898960302
+    },
+    {
+      "date": "2025-09-22",
+      "mnav": 1.4884,
+      "premium_pct": 48.84,
+      "btc_price": 112696.45,
+      "mstr_close": 335.93,
+      "mstr_market_cap": 107322331882,
+      "btc_holdings": 639835,
+      "btc_nav": 72107133086
+    },
+    {
+      "date": "2025-09-23",
+      "mnav": 1.4593,
+      "premium_pct": 45.93,
+      "btc_price": 112176.37,
+      "mstr_close": 327.78,
+      "mstr_market_cap": 104739961219,
+      "btc_holdings": 639835,
+      "btc_nav": 71774367699
+    },
+    {
+      "date": "2025-09-24",
+      "mnav": 1.4247,
+      "premium_pct": 42.47,
+      "btc_price": 113360.02,
+      "mstr_close": 323.31,
+      "mstr_market_cap": 103332687180,
+      "btc_holdings": 639835,
+      "btc_nav": 72531708397
+    },
+    {
+      "date": "2025-09-25",
+      "mnav": 1.374,
+      "premium_pct": 37.4,
+      "btc_price": 109339.13,
+      "mstr_close": 300.7,
+      "mstr_market_cap": 96125945639,
+      "btc_holdings": 639835,
+      "btc_nav": 69959002244
+    },
+    {
+      "date": "2025-09-26",
+      "mnav": 1.409,
+      "premium_pct": 40.9,
+      "btc_price": 109611.18,
+      "mstr_close": 309.06,
+      "mstr_market_cap": 98818575518,
+      "btc_holdings": 639835,
+      "btc_nav": 70133069355
+    },
+    {
+      "date": "2025-09-29",
+      "mnav": 1.4288,
+      "premium_pct": 42.88,
+      "btc_price": 114199.64,
+      "mstr_close": 326.42,
+      "mstr_market_cap": 104433111540,
+      "btc_holdings": 640031,
+      "btc_nav": 73091309789
+    },
+    {
+      "date": "2025-09-30",
+      "mnav": 1.4139,
+      "premium_pct": 41.39,
+      "btc_price": 113941.29,
+      "mstr_close": 322.21,
+      "mstr_market_cap": 103107200000,
+      "btc_holdings": 640031,
+      "btc_nav": 72925957780
+    },
+    {
+      "date": "2025-10-01",
+      "mnav": 1.4365,
+      "premium_pct": 43.65,
+      "btc_price": 117890.13,
+      "mstr_close": 338.41,
+      "mstr_market_cap": 108386837373,
+      "btc_holdings": 640031,
+      "btc_nav": 75453337794
+    },
+    {
+      "date": "2025-10-02",
+      "mnav": 1.4685,
+      "premium_pct": 46.85,
+      "btc_price": 120165.15,
+      "mstr_close": 352.33,
+      "mstr_market_cap": 112944742906,
+      "btc_holdings": 640031,
+      "btc_nav": 76909421120
+    },
+    {
+      "date": "2025-10-03",
+      "mnav": 1.4385,
+      "premium_pct": 43.85,
+      "btc_price": 122537.99,
+      "mstr_close": 351.63,
+      "mstr_market_cap": 112819721056,
+      "btc_holdings": 640031,
+      "btc_nav": 78428112278
+    },
+    {
+      "date": "2025-10-06",
+      "mnav": 1.4455,
+      "premium_pct": 44.55,
+      "btc_price": 125071.8,
+      "mstr_close": 359.69,
+      "mstr_market_cap": 115710709068,
+      "btc_holdings": 640031,
+      "btc_nav": 80049829226
+    },
+    {
+      "date": "2025-10-07",
+      "mnav": 1.3543,
+      "premium_pct": 35.43,
+      "btc_price": 121986.65,
+      "mstr_close": 328.4,
+      "mstr_market_cap": 105737660584,
+      "btc_holdings": 640031,
+      "btc_nav": 78075237586
+    },
+    {
+      "date": "2025-10-08",
+      "mnav": 1.3554,
+      "premium_pct": 35.54,
+      "btc_price": 122885.17,
+      "mstr_close": 330.8,
+      "mstr_market_cap": 106603895465,
+      "btc_holdings": 640031,
+      "btc_nav": 78650318240
+    },
+    {
+      "date": "2025-10-09",
+      "mnav": 1.3259,
+      "premium_pct": 32.59,
+      "btc_price": 121740.81,
+      "mstr_close": 320.29,
+      "mstr_market_cap": 103307450569,
+      "btc_holdings": 640031,
+      "btc_nav": 77917892365
+    },
+    {
+      "date": "2025-10-10",
+      "mnav": 1.35,
+      "premium_pct": 35.0,
+      "btc_price": 113879.74,
+      "mstr_close": 304.79,
+      "mstr_market_cap": 98394162752,
+      "btc_holdings": 640031,
+      "btc_nav": 72886563872
+    },
+    {
+      "date": "2025-10-13",
+      "mnav": 1.3792,
+      "premium_pct": 37.92,
+      "btc_price": 115638.3,
+      "mstr_close": 315.47,
+      "mstr_market_cap": 102109409334,
+      "btc_holdings": 640250,
+      "btc_nav": 74037421575
+    },
+    {
+      "date": "2025-10-14",
+      "mnav": 1.3433,
+      "premium_pct": 34.33,
+      "btc_price": 113253.11,
+      "mstr_close": 300.67,
+      "mstr_market_cap": 97404007169,
+      "btc_holdings": 640250,
+      "btc_nav": 72510303678
+    },
+    {
+      "date": "2025-10-15",
+      "mnav": 1.3565,
+      "premium_pct": 35.65,
+      "btc_price": 110793.49,
+      "mstr_close": 296.76,
+      "mstr_market_cap": 96221204219,
+      "btc_holdings": 640250,
+      "btc_nav": 70935531972
+    },
+    {
+      "date": "2025-10-16",
+      "mnav": 1.3323,
+      "premium_pct": 33.23,
+      "btc_price": 107985.6,
+      "mstr_close": 283.84,
+      "mstr_market_cap": 92112250398,
+      "btc_holdings": 640250,
+      "btc_nav": 69137780400
+    },
+    {
+      "date": "2025-10-17",
+      "mnav": 1.3741,
+      "premium_pct": 37.41,
+      "btc_price": 107016.94,
+      "mstr_close": 289.87,
+      "mstr_market_cap": 94151036065,
+      "btc_holdings": 640250,
+      "btc_nav": 68517595835
+    },
+    {
+      "date": "2025-10-20",
+      "mnav": 1.3608,
+      "premium_pct": 36.08,
+      "btc_price": 110836.41,
+      "mstr_close": 296.61,
+      "mstr_market_cap": 96591691034,
+      "btc_holdings": 640418,
+      "btc_nav": 70981632019
+    },
+    {
+      "date": "2025-10-21",
+      "mnav": 1.409,
+      "premium_pct": 40.9,
+      "btc_price": 109054.77,
+      "mstr_close": 301.91,
+      "mstr_market_cap": 98402970034,
+      "btc_holdings": 640418,
+      "btc_nav": 69840637694
+    },
+    {
+      "date": "2025-10-22",
+      "mnav": 1.3357,
+      "premium_pct": 33.57,
+      "btc_price": 107087.57,
+      "mstr_close": 280.81,
+      "mstr_market_cap": 91605105567,
+      "btc_holdings": 640418,
+      "btc_nav": 68580807404
+    },
+    {
+      "date": "2025-10-23",
+      "mnav": 1.3208,
+      "premium_pct": 32.08,
+      "btc_price": 109976.56,
+      "mstr_close": 284.92,
+      "mstr_market_cap": 93026380000,
+      "btc_holdings": 640418,
+      "btc_nav": 70430968602
+    },
+    {
+      "date": "2025-10-24",
+      "mnav": 1.329,
+      "premium_pct": 32.9,
+      "btc_price": 110995.2,
+      "mstr_close": 289.08,
+      "mstr_market_cap": 94466316321,
+      "btc_holdings": 640418,
+      "btc_nav": 71083323994
+    },
+    {
+      "date": "2025-10-27",
+      "mnav": 1.3249,
+      "premium_pct": 32.49,
+      "btc_price": 114083.62,
+      "mstr_close": 295.63,
+      "mstr_market_cap": 96857385203,
+      "btc_holdings": 640808,
+      "btc_nav": 73105696365
+    },
+    {
+      "date": "2025-10-28",
+      "mnav": 1.2865,
+      "premium_pct": 28.65,
+      "btc_price": 113215.04,
+      "mstr_close": 284.64,
+      "mstr_market_cap": 93337168560,
+      "btc_holdings": 640808,
+      "btc_nav": 72549103352
+    },
+    {
+      "date": "2025-10-29",
+      "mnav": 1.2682,
+      "premium_pct": 26.82,
+      "btc_price": 111207.38,
+      "mstr_close": 275.36,
+      "mstr_market_cap": 90371954735,
+      "btc_holdings": 640808,
+      "btc_nav": 71262578763
+    },
+    {
+      "date": "2025-10-30",
+      "mnav": 1.2104,
+      "premium_pct": 21.04,
+      "btc_price": 107811.51,
+      "mstr_close": 254.57,
+      "mstr_market_cap": 83620710648,
+      "btc_holdings": 640808,
+      "btc_nav": 69086478100
+    },
+    {
+      "date": "2025-10-31",
+      "mnav": 1.2619,
+      "premium_pct": 26.19,
+      "btc_price": 109571.26,
+      "mstr_close": 269.51,
+      "mstr_market_cap": 88604341804,
+      "btc_holdings": 640808,
+      "btc_nav": 70214139978
+    },
+    {
+      "date": "2025-11-03",
+      "mnav": 1.279,
+      "premium_pct": 27.9,
+      "btc_price": 106436.51,
+      "mstr_close": 264.67,
+      "mstr_market_cap": 87237533306,
+      "btc_holdings": 640808,
+      "btc_nav": 68205367100
+    },
+    {
+      "date": "2025-11-04",
+      "mnav": 1.2568,
+      "premium_pct": 25.68,
+      "btc_price": 101168.08,
+      "mstr_close": 246.99,
+      "mstr_market_cap": 81479853175,
+      "btc_holdings": 640808,
+      "btc_nav": 64829315009
+    },
+    {
+      "date": "2025-11-05",
+      "mnav": 1.2666,
+      "premium_pct": 26.66,
+      "btc_price": 103731.6,
+      "mstr_close": 255.0,
+      "mstr_market_cap": 84194347815,
+      "btc_holdings": 640808,
+      "btc_nav": 66472039133
+    },
+    {
+      "date": "2025-11-06",
+      "mnav": 1.2073,
+      "premium_pct": 20.73,
+      "btc_price": 101313.85,
+      "mstr_close": 237.2,
+      "mstr_market_cap": 78384286781,
+      "btc_holdings": 640808,
+      "btc_nav": 64922725591
+    },
+    {
+      "date": "2025-11-07",
+      "mnav": 1.2044,
+      "premium_pct": 20.44,
+      "btc_price": 103679.46,
+      "mstr_close": 241.93,
+      "mstr_market_cap": 80015717721,
+      "btc_holdings": 640808,
+      "btc_nav": 66438627404
+    },
+    {
+      "date": "2025-11-10",
+      "mnav": 1.1649,
+      "premium_pct": 16.49,
+      "btc_price": 105962.38,
+      "mstr_close": 238.88,
+      "mstr_market_cap": 79209492049,
+      "btc_holdings": 641692,
+      "btc_nav": 67995211547
+    },
+    {
+      "date": "2025-11-11",
+      "mnav": 1.161,
+      "premium_pct": 16.1,
+      "btc_price": 103054.47,
+      "mstr_close": 231.35,
+      "mstr_market_cap": 76778023863,
+      "btc_holdings": 641692,
+      "btc_nav": 66129228963
+    },
+    {
+      "date": "2025-11-12",
+      "mnav": 1.1408,
+      "premium_pct": 14.08,
+      "btc_price": 101913.39,
+      "mstr_close": 224.61,
+      "mstr_market_cap": 74604699578,
+      "btc_holdings": 641692,
+      "btc_nav": 65397007056
+    },
+    {
+      "date": "2025-11-13",
+      "mnav": 1.0851,
+      "premium_pct": 8.51,
+      "btc_price": 99564.32,
+      "mstr_close": 208.54,
+      "mstr_market_cap": 69325949438,
+      "btc_holdings": 641692,
+      "btc_nav": 63889627629
+    },
+    {
+      "date": "2025-11-14",
+      "mnav": 1.0898,
+      "premium_pct": 8.98,
+      "btc_price": 95035.7,
+      "mstr_close": 199.75,
+      "mstr_market_cap": 66460298852,
+      "btc_holdings": 641692,
+      "btc_nav": 60983648404
+    },
+    {
+      "date": "2025-11-17",
+      "mnav": 1.0887,
+      "premium_pct": 8.87,
+      "btc_price": 92134.04,
+      "mstr_close": 195.42,
+      "mstr_market_cap": 65185314706,
+      "btc_holdings": 649870,
+      "btc_nav": 59875148575
+    },
+    {
+      "date": "2025-11-18",
+      "mnav": 1.1405,
+      "premium_pct": 14.05,
+      "btc_price": 93145.76,
+      "mstr_close": 206.8,
+      "mstr_market_cap": 69039730417,
+      "btc_holdings": 649870,
+      "btc_nav": 60532635051
+    },
+    {
+      "date": "2025-11-19",
+      "mnav": 1.0608,
+      "premium_pct": 6.08,
+      "btc_price": 90392.7,
+      "mstr_close": 186.5,
+      "mstr_market_cap": 62315325941,
+      "btc_holdings": 649870,
+      "btc_nav": 58743503949
+    },
+    {
+      "date": "2025-11-20",
+      "mnav": 1.0389,
+      "premium_pct": 3.89,
+      "btc_price": 87734.7,
+      "mstr_close": 177.13,
+      "mstr_market_cap": 59234582307,
+      "btc_holdings": 649870,
+      "btc_nav": 57016149489
+    },
+    {
+      "date": "2025-11-21",
+      "mnav": 1.0433,
+      "premium_pct": 4.33,
+      "btc_price": 84164.15,
+      "mstr_close": 170.5,
+      "mstr_market_cap": 57065608666,
+      "btc_holdings": 649870,
+      "btc_nav": 54695756160
+    },
+    {
+      "date": "2025-11-24",
+      "mnav": 1.043,
+      "premium_pct": 4.3,
+      "btc_price": 88631.71,
+      "mstr_close": 179.04,
+      "mstr_market_cap": 60075704301,
+      "btc_holdings": 649870,
+      "btc_nav": 57599089378
+    },
+    {
+      "date": "2025-11-25",
+      "mnav": 1.0158,
+      "premium_pct": 1.58,
+      "btc_price": 87594.72,
+      "mstr_close": 172.19,
+      "mstr_market_cap": 57825893748,
+      "btc_holdings": 649870,
+      "btc_nav": 56925180686
+    },
+    {
+      "date": "2025-11-26",
+      "mnav": 1.0065,
+      "premium_pct": 0.65,
+      "btc_price": 90249.97,
+      "mstr_close": 175.64,
+      "mstr_market_cap": 59034131190,
+      "btc_holdings": 649870,
+      "btc_nav": 58650748004
+    },
+    {
+      "date": "2025-11-28",
+      "mnav": 1.0073,
+      "premium_pct": 0.73,
+      "btc_price": 91127.21,
+      "mstr_close": 177.18,
+      "mstr_market_cap": 59651883905,
+      "btc_holdings": 649870,
+      "btc_nav": 59220839963
+    },
+    {
+      "date": "2025-12-01",
+      "mnav": 1.0276,
+      "premium_pct": 2.76,
+      "btc_price": 86642.18,
+      "mstr_close": 171.42,
+      "mstr_market_cap": 57857976499,
+      "btc_holdings": 649870,
+      "btc_nav": 56306153517
+    },
+    {
+      "date": "2025-12-02",
+      "mnav": 1.0248,
+      "premium_pct": 2.48,
+      "btc_price": 91972.85,
+      "mstr_close": 181.33,
+      "mstr_market_cap": 61254062242,
+      "btc_holdings": 649870,
+      "btc_nav": 59770396030
+    },
+    {
+      "date": "2025-12-03",
+      "mnav": 1.0458,
+      "premium_pct": 4.58,
+      "btc_price": 93717.47,
+      "mstr_close": 188.39,
+      "mstr_market_cap": 63692201641,
+      "btc_holdings": 649870,
+      "btc_nav": 60904172229
+    },
+    {
+      "date": "2025-12-04",
+      "mnav": 1.0487,
+      "premium_pct": 4.87,
+      "btc_price": 92349.58,
+      "mstr_close": 186.01,
+      "mstr_market_cap": 62940122786,
+      "btc_holdings": 649870,
+      "btc_nav": 60015221555
+    },
+    {
+      "date": "2025-12-05",
+      "mnav": 1.0451,
+      "premium_pct": 4.51,
+      "btc_price": 89246.76,
+      "mstr_close": 178.99,
+      "mstr_market_cap": 60615352445,
+      "btc_holdings": 649870,
+      "btc_nav": 57998791921
+    },
+    {
+      "date": "2025-12-08",
+      "mnav": 1.039,
+      "premium_pct": 3.9,
+      "btc_price": 90858.05,
+      "mstr_close": 183.69,
+      "mstr_market_cap": 62362755000,
+      "btc_holdings": 660624,
+      "btc_nav": 60023008423
+    },
+    {
+      "date": "2025-12-09",
+      "mnav": 1.0476,
+      "premium_pct": 4.76,
+      "btc_price": 92790.2,
+      "mstr_close": 188.99,
+      "mstr_market_cap": 64215515086,
+      "btc_holdings": 660624,
+      "btc_nav": 61299433085
+    },
+    {
+      "date": "2025-12-10",
+      "mnav": 1.0271,
+      "premium_pct": 2.71,
+      "btc_price": 92541.98,
+      "mstr_close": 184.64,
+      "mstr_market_cap": 62789641667,
+      "btc_holdings": 660624,
+      "btc_nav": 61135452996
+    },
+    {
+      "date": "2025-12-11",
+      "mnav": 1.0238,
+      "premium_pct": 2.38,
+      "btc_price": 92243.54,
+      "mstr_close": 183.3,
+      "mstr_market_cap": 62385756506,
+      "btc_holdings": 660624,
+      "btc_nav": 60938296369
+    },
+    {
+      "date": "2025-12-12",
+      "mnav": 1.0073,
+      "premium_pct": 0.73,
+      "btc_price": 90323.07,
+      "mstr_close": 176.45,
+      "mstr_market_cap": 60104240079,
+      "btc_holdings": 660624,
+      "btc_nav": 59669587796
+    },
+    {
+      "date": "2025-12-15",
+      "mnav": 0.9575,
+      "premium_pct": -4.25,
+      "btc_price": 86115.31,
+      "mstr_close": 162.08,
+      "mstr_market_cap": 55346796381,
+      "btc_holdings": 671268,
+      "btc_nav": 57806451913
+    },
+    {
+      "date": "2025-12-16",
+      "mnav": 0.9718,
+      "premium_pct": -2.82,
+      "btc_price": 87752.71,
+      "mstr_close": 167.5,
+      "mstr_market_cap": 57244945558,
+      "btc_holdings": 671268,
+      "btc_nav": 58905586136
+    },
+    {
+      "date": "2025-12-17",
+      "mnav": 0.9478,
+      "premium_pct": -5.22,
+      "btc_price": 86219.03,
+      "mstr_close": 160.38,
+      "mstr_market_cap": 54856933002,
+      "btc_holdings": 671268,
+      "btc_nav": 57876075830
+    },
+    {
+      "date": "2025-12-18",
+      "mnav": 0.9437,
+      "premium_pct": -5.63,
+      "btc_price": 85515.31,
+      "mstr_close": 158.24,
+      "mstr_market_cap": 54169679849,
+      "btc_holdings": 671268,
+      "btc_nav": 57403691113
+    },
+    {
+      "date": "2025-12-19",
+      "mnav": 0.9533,
+      "premium_pct": -4.67,
+      "btc_price": 88241.7,
+      "mstr_close": 164.82,
+      "mstr_market_cap": 56468765110,
+      "btc_holdings": 671268,
+      "btc_nav": 59233829476
+    },
+    {
+      "date": "2025-12-22",
+      "mnav": 0.9489,
+      "premium_pct": -5.11,
+      "btc_price": 88604.75,
+      "mstr_close": 164.32,
+      "mstr_market_cap": 56436775531,
+      "btc_holdings": 671268,
+      "btc_nav": 59477533323
+    },
+    {
+      "date": "2025-12-23",
+      "mnav": 0.9255,
+      "premium_pct": -7.45,
+      "btc_price": 87350.52,
+      "mstr_close": 157.88,
+      "mstr_market_cap": 54269533844,
+      "btc_holdings": 671268,
+      "btc_nav": 58635608859
+    },
+    {
+      "date": "2025-12-24",
+      "mnav": 0.9249,
+      "premium_pct": -7.51,
+      "btc_price": 87941.71,
+      "mstr_close": 158.71,
+      "mstr_market_cap": 54599690197,
+      "btc_holdings": 671268,
+      "btc_nav": 59032455788
+    },
+    {
+      "date": "2025-12-26",
+      "mnav": 0.9321,
+      "premium_pct": -6.79,
+      "btc_price": 87457.38,
+      "mstr_close": 158.81,
+      "mstr_market_cap": 54723854482,
+      "btc_holdings": 671268,
+      "btc_nav": 58707340558
+    },
+    {
+      "date": "2025-12-29",
+      "mnav": 0.9145,
+      "premium_pct": -8.55,
+      "btc_price": 87283.31,
+      "mstr_close": 155.39,
+      "mstr_market_cap": 53677110775,
+      "btc_holdings": 672497,
+      "btc_nav": 58697764125
+    },
+    {
+      "date": "2025-12-30",
+      "mnav": 0.9054,
+      "premium_pct": -9.46,
+      "btc_price": 88352.7,
+      "mstr_close": 155.61,
+      "mstr_market_cap": 53797083214,
+      "btc_holdings": 672497,
+      "btc_nav": 59416925692
+    },
+    {
+      "date": "2025-12-31",
+      "mnav": 0.8928,
+      "premium_pct": -10.72,
+      "btc_price": 87568.19,
+      "mstr_close": 151.95,
+      "mstr_market_cap": 52574700000,
+      "btc_holdings": 672497,
+      "btc_nav": 58889345070
+    },
+    {
+      "date": "2026-01-02",
+      "mnav": 0.898,
+      "premium_pct": -10.2,
+      "btc_price": 90225.0,
+      "mstr_close": 157.16,
+      "mstr_market_cap": 54489118205,
+      "btc_holdings": 672497,
+      "btc_nav": 60676041825
+    },
+    {
+      "date": "2026-01-05",
+      "mnav": 0.9028,
+      "premium_pct": -9.72,
+      "btc_price": 94172.17,
+      "mstr_close": 164.72,
+      "mstr_market_cap": 57285955427,
+      "btc_holdings": 673783,
+      "btc_nav": 63451607219
+    },
+    {
+      "date": "2026-01-06",
+      "mnav": 0.8701,
+      "premium_pct": -12.99,
+      "btc_price": 93805.62,
+      "mstr_close": 157.97,
+      "mstr_market_cap": 54994622614,
+      "btc_holdings": 673783,
+      "btc_nav": 63204632060
+    },
+    {
+      "date": "2026-01-07",
+      "mnav": 0.9187,
+      "premium_pct": -8.13,
+      "btc_price": 91109.2,
+      "mstr_close": 161.83,
+      "mstr_market_cap": 56395956745,
+      "btc_holdings": 673783,
+      "btc_nav": 61387830104
+    },
+    {
+      "date": "2026-01-08",
+      "mnav": 0.9485,
+      "premium_pct": -5.15,
+      "btc_price": 91144.09,
+      "mstr_close": 166.97,
+      "mstr_market_cap": 58246556815,
+      "btc_holdings": 673783,
+      "btc_nav": 61411338392
+    },
+    {
+      "date": "2026-01-09",
+      "mnav": 0.901,
+      "premium_pct": -9.9,
+      "btc_price": 90501.13,
+      "mstr_close": 157.33,
+      "mstr_market_cap": 54939636000,
+      "btc_holdings": 673783,
+      "btc_nav": 60978122875
+    },
+    {
+      "date": "2026-01-12",
+      "mnav": 0.9069,
+      "premium_pct": -9.31,
+      "btc_price": 91152.85,
+      "mstr_close": 162.23,
+      "mstr_market_cap": 56823761225,
+      "btc_holdings": 687410,
+      "btc_nav": 62659380619
+    },
+    {
+      "date": "2026-01-13",
+      "mnav": 0.9218,
+      "premium_pct": -7.82,
+      "btc_price": 95724.32,
+      "mstr_close": 172.99,
+      "mstr_market_cap": 60654138184,
+      "btc_holdings": 687410,
+      "btc_nav": 65801854811
+    },
+    {
+      "date": "2026-01-14",
+      "mnav": 0.9447,
+      "premium_pct": -5.53,
+      "btc_price": 96918.07,
+      "mstr_close": 179.33,
+      "mstr_market_cap": 62940844749,
+      "btc_holdings": 687410,
+      "btc_nav": 66622450499
+    },
+    {
+      "date": "2026-01-15",
+      "mnav": 0.9139,
+      "premium_pct": -8.61,
+      "btc_price": 95576.1,
+      "mstr_close": 170.91,
+      "mstr_market_cap": 60046379943,
+      "btc_holdings": 687410,
+      "btc_nav": 65699966901
+    },
+    {
+      "date": "2026-01-16",
+      "mnav": 0.931,
+      "premium_pct": -6.9,
+      "btc_price": 95457.21,
+      "mstr_close": 173.71,
+      "mstr_market_cap": 61091876734,
+      "btc_holdings": 687410,
+      "btc_nav": 65618240726
+    },
+    {
+      "date": "2026-01-20",
+      "mnav": 0.9023,
+      "premium_pct": -9.77,
+      "btc_price": 88348.44,
+      "mstr_close": 160.23,
+      "mstr_market_cap": 56578993316,
+      "btc_holdings": 709715,
+      "btc_nav": 62702213095
+    },
+    {
+      "date": "2026-01-21",
+      "mnav": 0.9093,
+      "premium_pct": -9.07,
+      "btc_price": 89724.2,
+      "mstr_close": 163.81,
+      "mstr_market_cap": 57901374557,
+      "btc_holdings": 709715,
+      "btc_nav": 63678610603
+    },
+    {
+      "date": "2026-01-22",
+      "mnav": 0.8991,
+      "premium_pct": -10.09,
+      "btc_price": 89260.53,
+      "mstr_close": 160.98,
+      "mstr_market_cap": 56958301298,
+      "btc_holdings": 709715,
+      "btc_nav": 63349537049
+    },
+    {
+      "date": "2026-01-23",
+      "mnav": 0.9096,
+      "premium_pct": -9.04,
+      "btc_price": 89487.84,
+      "mstr_close": 163.11,
+      "mstr_market_cap": 57769937206,
+      "btc_holdings": 709715,
+      "btc_nav": 63510862366
+    },
+    {
+      "date": "2026-01-26",
+      "mnav": 0.9094,
+      "premium_pct": -9.06,
+      "btc_price": 88019.52,
+      "mstr_close": 160.58,
+      "mstr_market_cap": 57045152818,
+      "btc_holdings": 712647,
+      "btc_nav": 62726846869
+    },
+    {
+      "date": "2026-01-27",
+      "mnav": 0.9047,
+      "premium_pct": -9.53,
+      "btc_price": 89119.68,
+      "mstr_close": 161.58,
+      "mstr_market_cap": 57457848000,
+      "btc_holdings": 712647,
+      "btc_nav": 63510872593
+    },
+    {
+      "date": "2026-01-28",
+      "mnav": 0.8867,
+      "premium_pct": -11.33,
+      "btc_price": 89259.32,
+      "mstr_close": 158.45,
+      "mstr_market_cap": 56401157690,
+      "btc_holdings": 712647,
+      "btc_nav": 63610386620
+    },
+    {
+      "date": "2026-01-29",
+      "mnav": 0.8481,
+      "premium_pct": -15.19,
+      "btc_price": 84419.97,
+      "mstr_close": 143.19,
+      "mstr_market_cap": 51020187984,
+      "btc_holdings": 712647,
+      "btc_nav": 60161638361
+    },
+    {
+      "date": "2026-01-30",
+      "mnav": 0.8918,
+      "premium_pct": -10.82,
+      "btc_price": 84022.42,
+      "mstr_close": 149.71,
+      "mstr_market_cap": 53396566567,
+      "btc_holdings": 712647,
+      "btc_nav": 59878325546
+    },
+    {
+      "date": "2026-02-02",
+      "mnav": 0.8896,
+      "premium_pct": -11.04,
+      "btc_price": 78698.24,
+      "mstr_close": 139.63,
+      "mstr_market_cap": 49950305287,
+      "btc_holdings": 713502,
+      "btc_nav": 56151351636
+    },
+    {
+      "date": "2026-02-03",
+      "mnav": 0.8851,
+      "premium_pct": -11.49,
+      "btc_price": 75560.99,
+      "mstr_close": 133.26,
+      "mstr_market_cap": 47718925215,
+      "btc_holdings": 713502,
+      "btc_nav": 53912917487
+    },
+    {
+      "date": "2026-02-04",
+      "mnav": 0.8957,
+      "premium_pct": -10.43,
+      "btc_price": 72402.78,
+      "mstr_close": 129.09,
+      "mstr_market_cap": 46271593276,
+      "btc_holdings": 713502,
+      "btc_nav": 51659528336
+    },
+    {
+      "date": "2026-02-05",
+      "mnav": 0.843,
+      "premium_pct": -15.7,
+      "btc_price": 63819.5,
+      "mstr_close": 106.99,
+      "mstr_market_cap": 38388012000,
+      "btc_holdings": 713502,
+      "btc_nav": 45535340889
+    },
+    {
+      "date": "2026-02-06",
+      "mnav": 0.9526,
+      "premium_pct": -4.74,
+      "btc_price": 71297.64,
+      "mstr_close": 134.93,
+      "mstr_market_cap": 48460859036,
+      "btc_holdings": 713502,
+      "btc_nav": 50871008735
+    },
+    {
+      "date": "2026-02-09",
+      "mnav": 0.9921,
+      "premium_pct": -0.79,
+      "btc_price": 70339.17,
+      "mstr_close": 138.44,
+      "mstr_market_cap": 49869164414,
+      "btc_holdings": 714644,
+      "btc_nav": 50267465805
+    },
+    {
+      "date": "2026-02-10",
+      "mnav": 0.9774,
+      "premium_pct": -2.26,
+      "btc_price": 68661.02,
+      "mstr_close": 133.0,
+      "mstr_market_cap": 47956844341,
+      "btc_holdings": 714644,
+      "btc_nav": 49068185977
+    },
+    {
+      "date": "2026-02-11",
+      "mnav": 0.9448,
+      "premium_pct": -5.52,
+      "btc_price": 67390.93,
+      "mstr_close": 126.07,
+      "mstr_market_cap": 45502865291,
+      "btc_holdings": 714644,
+      "btc_nav": 48160523779
+    },
+    {
+      "date": "2026-02-12",
+      "mnav": 0.9387,
+      "premium_pct": -6.13,
+      "btc_price": 66246.04,
+      "mstr_close": 123.0,
+      "mstr_market_cap": 44438533224,
+      "btc_holdings": 714644,
+      "btc_nav": 47342335010
+    },
+    {
+      "date": "2026-02-13",
+      "mnav": 0.9829,
+      "premium_pct": -1.71,
+      "btc_price": 68930.86,
+      "mstr_close": 133.88,
+      "mstr_market_cap": 48416958163,
+      "btc_holdings": 714644,
+      "btc_nav": 49261025514
+    },
+    {
+      "date": "2026-02-17",
+      "mnav": 0.9649,
+      "premium_pct": -3.51,
+      "btc_price": 67511.08,
+      "mstr_close": 128.67,
+      "mstr_market_cap": 46715787914,
+      "btc_holdings": 717131,
+      "btc_nav": 48414288311
+    },
+    {
+      "date": "2026-02-18",
+      "mnav": 0.9556,
+      "premium_pct": -4.44,
+      "btc_price": 66395.02,
+      "mstr_close": 125.2,
+      "mstr_market_cap": 45500462194,
+      "btc_holdings": 717131,
+      "btc_nav": 47613927088
+    },
+    {
+      "date": "2026-02-19",
+      "mnav": 0.9813,
+      "premium_pct": -1.87,
+      "btc_price": 66915.11,
+      "mstr_close": 129.45,
+      "mstr_market_cap": 47091033233,
+      "btc_holdings": 717131,
+      "btc_nav": 47986899749
+    },
+    {
+      "date": "2026-02-20",
+      "mnav": 0.978,
+      "premium_pct": -2.2,
+      "btc_price": 68042.0,
+      "mstr_close": 131.05,
+      "mstr_market_cap": 47719673290,
+      "btc_holdings": 717131,
+      "btc_nav": 48795027502
+    },
+    {
+      "date": "2026-02-23",
+      "mnav": 0.9726,
+      "premium_pct": -2.74,
+      "btc_price": 64719.45,
+      "mstr_close": 123.71,
+      "mstr_market_cap": 45178892000,
+      "btc_holdings": 717722,
+      "btc_nav": 46450573093
+    },
+    {
+      "date": "2026-02-24",
+      "mnav": 0.9899,
+      "premium_pct": -1.01,
+      "btc_price": 64113.97,
+      "mstr_close": 124.61,
+      "mstr_market_cap": 45551877709,
+      "btc_holdings": 717722,
+      "btc_nav": 46016006776
+    },
+    {
+      "date": "2026-02-25",
+      "mnav": 1.0105,
+      "premium_pct": 1.05,
+      "btc_price": 68441.72,
+      "mstr_close": 135.65,
+      "mstr_market_cap": 49635842207,
+      "btc_holdings": 717722,
+      "btc_nav": 49122128162
+    },
+    {
+      "date": "2026-02-26",
+      "mnav": 1.0076,
+      "premium_pct": 0.76,
+      "btc_price": 67559.78,
+      "mstr_close": 133.4,
+      "mstr_market_cap": 48859973244,
+      "btc_holdings": 717722,
+      "btc_nav": 48489140421
+    },
+    {
+      "date": "2026-02-27",
+      "mnav": 1.0082,
+      "premium_pct": 0.82,
+      "btc_price": 65612.8,
+      "mstr_close": 129.5,
+      "mstr_market_cap": 47477577749,
+      "btc_holdings": 717722,
+      "btc_nav": 47091750042
+    },
+    {
+      "date": "2026-03-02",
+      "mnav": 1.012,
+      "premium_pct": 1.2,
+      "btc_price": 69388.34,
+      "mstr_close": 137.65,
+      "mstr_market_cap": 50612375433,
+      "btc_holdings": 720737,
+      "btc_nav": 50010744007
+    },
+    {
+      "date": "2026-03-03",
+      "mnav": 0.9925,
+      "premium_pct": -0.75,
+      "btc_price": 68265.41,
+      "mstr_close": 132.68,
+      "mstr_market_cap": 48832136830,
+      "btc_holdings": 720737,
+      "btc_nav": 49201406807
+    },
+    {
+      "date": "2026-03-04",
+      "mnav": 1.0293,
+      "premium_pct": 2.93,
+      "btc_price": 72719.81,
+      "mstr_close": 146.44,
+      "mstr_market_cap": 53948496000,
+      "btc_holdings": 720737,
+      "btc_nav": 52411857700
+    },
+    {
+      "date": "2026-03-05",
+      "mnav": 1.0042,
+      "premium_pct": 0.42,
+      "btc_price": 71233.22,
+      "mstr_close": 139.81,
+      "mstr_market_cap": 51555714145,
+      "btc_holdings": 720737,
+      "btc_nav": 51340417283
+    },
+    {
+      "date": "2026-03-06",
+      "mnav": 0.9996,
+      "premium_pct": -0.04,
+      "btc_price": 68413.33,
+      "mstr_close": 133.53,
+      "mstr_market_cap": 49287406652,
+      "btc_holdings": 720737,
+      "btc_nav": 49308018224
+    },
+    {
+      "date": "2026-03-09",
+      "mnav": 1.0143,
+      "premium_pct": 1.43,
+      "btc_price": 68646.0,
+      "mstr_close": 138.95,
+      "mstr_market_cap": 51436202114,
+      "btc_holdings": 738731,
+      "btc_nav": 50710928226
+    },
+    {
+      "date": "2026-03-10",
+      "mnav": 0.9963,
+      "premium_pct": -0.37,
+      "btc_price": 69707.36,
+      "mstr_close": 138.46,
+      "mstr_market_cap": 51304045287,
+      "btc_holdings": 738731,
+      "btc_nav": 51494987760
+    },
+    {
+      "date": "2026-03-11",
+      "mnav": 0.9865,
+      "premium_pct": -1.35,
+      "btc_price": 70399.57,
+      "mstr_close": 138.33,
+      "mstr_market_cap": 51305059877,
+      "btc_holdings": 738731,
+      "btc_nav": 52006344746
+    },
+    {
+      "date": "2026-03-12",
+      "mnav": 0.9836,
+      "premium_pct": -1.64,
+      "btc_price": 70168.75,
+      "mstr_close": 137.34,
+      "mstr_market_cap": 50986711939,
+      "btc_holdings": 738731,
+      "btc_nav": 51835830856
+    },
+    {
+      "date": "2026-03-13",
+      "mnav": 0.9924,
+      "premium_pct": -0.76,
+      "btc_price": 70794.09,
+      "mstr_close": 139.67,
+      "mstr_market_cap": 51901372000,
+      "btc_holdings": 738731,
+      "btc_nav": 52297788900
+    },
+    {
+      "date": "2026-03-16",
+      "mnav": 0.9668,
+      "premium_pct": -3.32,
+      "btc_price": 74717.39,
+      "mstr_close": 147.52,
+      "mstr_market_cap": 54975786568,
+      "btc_holdings": 761068,
+      "btc_nav": 56865014573
+    },
+    {
+      "date": "2026-03-17",
+      "mnav": 0.9912,
+      "premium_pct": -0.88,
+      "btc_price": 74313.12,
+      "mstr_close": 150.28,
+      "mstr_market_cap": 56057779522,
+      "btc_holdings": 761068,
+      "btc_nav": 56557337612
+    },
+    {
+      "date": "2026-03-18",
+      "mnav": 0.9694,
+      "premium_pct": -3.06,
+      "btc_price": 71136.52,
+      "mstr_close": 140.56,
+      "mstr_market_cap": 52481980335,
+      "btc_holdings": 761068,
+      "btc_nav": 54139729003
+    },
+    {
+      "date": "2026-03-19",
+      "mnav": 0.9677,
+      "premium_pct": -3.23,
+      "btc_price": 70147.45,
+      "mstr_close": 138.24,
+      "mstr_market_cap": 51664895954,
+      "btc_holdings": 761068,
+      "btc_nav": 53386979477
+    },
+    {
+      "date": "2026-03-20",
+      "mnav": 0.9421,
+      "premium_pct": -5.79,
+      "btc_price": 70781.08,
+      "mstr_close": 135.66,
+      "mstr_market_cap": 50748898546,
+      "btc_holdings": 761068,
+      "btc_nav": 53869214993
+    },
+    {
+      "date": "2026-03-23",
+      "mnav": 0.9615,
+      "premium_pct": -3.85,
+      "btc_price": 70754.11,
+      "mstr_close": 138.2,
+      "mstr_market_cap": 51846497701,
+      "btc_holdings": 762099,
+      "btc_nav": 53921636477
+    },
+    {
+      "date": "2026-03-24",
+      "mnav": 0.9546,
+      "premium_pct": -4.54,
+      "btc_price": 70327.57,
+      "mstr_close": 136.25,
+      "mstr_market_cap": 51163388874,
+      "btc_holdings": 762099,
+      "btc_nav": 53596570769
+    },
+    {
+      "date": "2026-03-25",
+      "mnav": 0.9618,
+      "premium_pct": -3.82,
+      "btc_price": 71343.12,
+      "mstr_close": 139.13,
+      "mstr_market_cap": 52294329241,
+      "btc_holdings": 762099,
+      "btc_nav": 54370520409
+    },
+    {
+      "date": "2026-03-26",
+      "mnav": 0.9535,
+      "premium_pct": -4.65,
+      "btc_price": 68826.31,
+      "mstr_close": 132.93,
+      "mstr_market_cap": 50011219970,
+      "btc_holdings": 762099,
+      "btc_nav": 52452462025
+    },
+    {
+      "date": "2026-03-27",
+      "mnav": 0.9438,
+      "premium_pct": -5.62,
+      "btc_price": 65981.97,
+      "mstr_close": 126.03,
+      "mstr_market_cap": 47460097235,
+      "btc_holdings": 762099,
+      "btc_nav": 50284793355
+    },
+    {
+      "date": "2026-03-30",
+      "mnav": 0.9017,
+      "premium_pct": -9.83,
+      "btc_price": 66734.2,
+      "mstr_close": 121.44,
+      "mstr_market_cap": 45861141279,
+      "btc_holdings": 762099,
+      "btc_nav": 50858067086
+    },
+    {
+      "date": "2026-03-31",
+      "mnav": 0.9083,
+      "premium_pct": -9.17,
+      "btc_price": 68146.95,
+      "mstr_close": 124.8,
+      "mstr_market_cap": 47174400000,
+      "btc_holdings": 762099,
+      "btc_nav": 51934722448
+    },
+    {
+      "date": "2026-04-01",
+      "mnav": 0.8941,
+      "premium_pct": -10.59,
+      "btc_price": 68114.03,
+      "mstr_close": 122.78,
+      "mstr_market_cap": 46410840000,
+      "btc_holdings": 762099,
+      "btc_nav": 51909634149
+    },
+    {
+      "date": "2026-04-02",
+      "mnav": 0.8868,
+      "premium_pct": -11.32,
+      "btc_price": 67019.99,
+      "mstr_close": 119.83,
+      "mstr_market_cap": 45295740000,
+      "btc_holdings": 762099,
+      "btc_nav": 51075867359
+    }
+  ]
+}

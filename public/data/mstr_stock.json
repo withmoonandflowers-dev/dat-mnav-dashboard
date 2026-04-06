@@ -1,0 +1,1372 @@
+{
+  "2025-03-03": {
+    "close": 250.92,
+    "market_cap": 73714719805,
+    "shares_outstanding": 293777777
+  },
+  "2025-03-04": {
+    "close": 275.15,
+    "market_cap": 80894100000,
+    "shares_outstanding": 294000000
+  },
+  "2025-03-05": {
+    "close": 308.55,
+    "market_cap": 90782266598,
+    "shares_outstanding": 294222222
+  },
+  "2025-03-06": {
+    "close": 304.11,
+    "market_cap": 89543499865,
+    "shares_outstanding": 294444444
+  },
+  "2025-03-07": {
+    "close": 287.18,
+    "market_cap": 84622373142,
+    "shares_outstanding": 294666666
+  },
+  "2025-03-10": {
+    "close": 239.27,
+    "market_cap": 70664406587,
+    "shares_outstanding": 295333333
+  },
+  "2025-03-11": {
+    "close": 260.59,
+    "market_cap": 77018822077,
+    "shares_outstanding": 295555555
+  },
+  "2025-03-12": {
+    "close": 262.55,
+    "market_cap": 77656455351,
+    "shares_outstanding": 295777777
+  },
+  "2025-03-13": {
+    "close": 263.26,
+    "market_cap": 77924960000,
+    "shares_outstanding": 296000000
+  },
+  "2025-03-14": {
+    "close": 297.49,
+    "market_cap": 88123148823,
+    "shares_outstanding": 296222222
+  },
+  "2025-03-17": {
+    "close": 294.27,
+    "market_cap": 87365493072,
+    "shares_outstanding": 296888888
+  },
+  "2025-03-18": {
+    "close": 283.19,
+    "market_cap": 84138895524,
+    "shares_outstanding": 297111111
+  },
+  "2025-03-19": {
+    "close": 304.23,
+    "market_cap": 90457719899,
+    "shares_outstanding": 297333333
+  },
+  "2025-03-20": {
+    "close": 302.07,
+    "market_cap": 89882606499,
+    "shares_outstanding": 297555555
+  },
+  "2025-03-21": {
+    "close": 304.0,
+    "market_cap": 90524444208,
+    "shares_outstanding": 297777777
+  },
+  "2025-03-24": {
+    "close": 335.72,
+    "market_cap": 100193768740,
+    "shares_outstanding": 298444444
+  },
+  "2025-03-25": {
+    "close": 341.81,
+    "market_cap": 102087253105,
+    "shares_outstanding": 298666666
+  },
+  "2025-03-26": {
+    "close": 329.31,
+    "market_cap": 98427099707,
+    "shares_outstanding": 298888888
+  },
+  "2025-03-27": {
+    "close": 324.59,
+    "market_cap": 97088475519,
+    "shares_outstanding": 299111111
+  },
+  "2025-03-28": {
+    "close": 289.41,
+    "market_cap": 86630059904,
+    "shares_outstanding": 299333333
+  },
+  "2025-03-31": {
+    "close": 288.27,
+    "market_cap": 86481000000,
+    "shares_outstanding": 300000000
+  },
+  "2025-04-01": {
+    "close": 306.02,
+    "market_cap": 91853079953,
+    "shares_outstanding": 300153846
+  },
+  "2025-04-02": {
+    "close": 312.54,
+    "market_cap": 93858166058,
+    "shares_outstanding": 300307692
+  },
+  "2025-04-03": {
+    "close": 282.28,
+    "market_cap": 84814282947,
+    "shares_outstanding": 300461538
+  },
+  "2025-04-04": {
+    "close": 293.61,
+    "market_cap": 88263682896,
+    "shares_outstanding": 300615384
+  },
+  "2025-04-07": {
+    "close": 268.14,
+    "market_cap": 80730766133,
+    "shares_outstanding": 301076923
+  },
+  "2025-04-08": {
+    "close": 237.95,
+    "market_cap": 71677861484,
+    "shares_outstanding": 301230769
+  },
+  "2025-04-09": {
+    "close": 296.86,
+    "market_cap": 89469036809,
+    "shares_outstanding": 301384615
+  },
+  "2025-04-10": {
+    "close": 272.34,
+    "market_cap": 82120984469,
+    "shares_outstanding": 301538461
+  },
+  "2025-04-11": {
+    "close": 299.98,
+    "market_cap": 90501658254,
+    "shares_outstanding": 301692307
+  },
+  "2025-04-14": {
+    "close": 311.45,
+    "market_cap": 94105815337,
+    "shares_outstanding": 302153846
+  },
+  "2025-04-15": {
+    "close": 310.72,
+    "market_cap": 93933046058,
+    "shares_outstanding": 302307692
+  },
+  "2025-04-16": {
+    "close": 311.66,
+    "market_cap": 94265162933,
+    "shares_outstanding": 302461538
+  },
+  "2025-04-17": {
+    "close": 317.2,
+    "market_cap": 95989599805,
+    "shares_outstanding": 302615384
+  },
+  "2025-04-21": {
+    "close": 317.76,
+    "market_cap": 96354609157,
+    "shares_outstanding": 303230769
+  },
+  "2025-04-22": {
+    "close": 343.03,
+    "market_cap": 104070024483,
+    "shares_outstanding": 303384615
+  },
+  "2025-04-23": {
+    "close": 345.73,
+    "market_cap": 104942352122,
+    "shares_outstanding": 303538461
+  },
+  "2025-04-24": {
+    "close": 350.34,
+    "market_cap": 106395562834,
+    "shares_outstanding": 303692307
+  },
+  "2025-04-25": {
+    "close": 368.71,
+    "market_cap": 112031115073,
+    "shares_outstanding": 303846153
+  },
+  "2025-04-28": {
+    "close": 369.25,
+    "market_cap": 112365615271,
+    "shares_outstanding": 304307692
+  },
+  "2025-04-29": {
+    "close": 381.45,
+    "market_cap": 116136853670,
+    "shares_outstanding": 304461538
+  },
+  "2025-04-30": {
+    "close": 380.11,
+    "market_cap": 115787353612,
+    "shares_outstanding": 304615384
+  },
+  "2025-05-01": {
+    "close": 381.6,
+    "market_cap": 116299938168,
+    "shares_outstanding": 304769230
+  },
+  "2025-05-02": {
+    "close": 394.37,
+    "market_cap": 120252513482,
+    "shares_outstanding": 304923076
+  },
+  "2025-05-05": {
+    "close": 386.53,
+    "market_cap": 118040315236,
+    "shares_outstanding": 305384615
+  },
+  "2025-05-06": {
+    "close": 385.6,
+    "market_cap": 117815630562,
+    "shares_outstanding": 305538461
+  },
+  "2025-05-07": {
+    "close": 392.48,
+    "market_cap": 119978116651,
+    "shares_outstanding": 305692307
+  },
+  "2025-05-08": {
+    "close": 414.38,
+    "market_cap": 126736528880,
+    "shares_outstanding": 305846153
+  },
+  "2025-05-09": {
+    "close": 416.03,
+    "market_cap": 127305180000,
+    "shares_outstanding": 306000000
+  },
+  "2025-05-12": {
+    "close": 404.9,
+    "market_cap": 124086276736,
+    "shares_outstanding": 306461538
+  },
+  "2025-05-13": {
+    "close": 421.61,
+    "market_cap": 129272112048,
+    "shares_outstanding": 306615384
+  },
+  "2025-05-14": {
+    "close": 416.75,
+    "market_cap": 127846076602,
+    "shares_outstanding": 306769230
+  },
+  "2025-05-15": {
+    "close": 397.03,
+    "market_cap": 121857668864,
+    "shares_outstanding": 306923076
+  },
+  "2025-05-16": {
+    "close": 399.8,
+    "market_cap": 122769353815,
+    "shares_outstanding": 307076923
+  },
+  "2025-05-19": {
+    "close": 413.42,
+    "market_cap": 127142550547,
+    "shares_outstanding": 307538461
+  },
+  "2025-05-20": {
+    "close": 416.92,
+    "market_cap": 128283076634,
+    "shares_outstanding": 307692307
+  },
+  "2025-05-21": {
+    "close": 402.69,
+    "market_cap": 123966567352,
+    "shares_outstanding": 307846153
+  },
+  "2025-05-22": {
+    "close": 399.46,
+    "market_cap": 123033680000,
+    "shares_outstanding": 308000000
+  },
+  "2025-05-23": {
+    "close": 369.51,
+    "market_cap": 113865927635,
+    "shares_outstanding": 308153846
+  },
+  "2025-05-27": {
+    "close": 372.2,
+    "market_cap": 114923907406,
+    "shares_outstanding": 308769230
+  },
+  "2025-05-28": {
+    "close": 364.25,
+    "market_cap": 112525230433,
+    "shares_outstanding": 308923076
+  },
+  "2025-05-29": {
+    "close": 370.63,
+    "market_cap": 114553179971,
+    "shares_outstanding": 309076923
+  },
+  "2025-05-30": {
+    "close": 369.06,
+    "market_cap": 114124707607,
+    "shares_outstanding": 309230769
+  },
+  "2025-06-02": {
+    "close": 372.27,
+    "market_cap": 115289155127,
+    "shares_outstanding": 309692307
+  },
+  "2025-06-03": {
+    "close": 387.43,
+    "market_cap": 120043695057,
+    "shares_outstanding": 309846153
+  },
+  "2025-06-04": {
+    "close": 378.1,
+    "market_cap": 117211000000,
+    "shares_outstanding": 310000000
+  },
+  "2025-06-05": {
+    "close": 368.79,
+    "market_cap": 114381636866,
+    "shares_outstanding": 310153846
+  },
+  "2025-06-06": {
+    "close": 374.47,
+    "market_cap": 116200921423,
+    "shares_outstanding": 310307692
+  },
+  "2025-06-09": {
+    "close": 392.12,
+    "market_cap": 121858830468,
+    "shares_outstanding": 310769230
+  },
+  "2025-06-10": {
+    "close": 391.18,
+    "market_cap": 121626888870,
+    "shares_outstanding": 310923076
+  },
+  "2025-06-11": {
+    "close": 387.11,
+    "market_cap": 120420987663,
+    "shares_outstanding": 311076923
+  },
+  "2025-06-12": {
+    "close": 379.76,
+    "market_cap": 118192996835,
+    "shares_outstanding": 311230769
+  },
+  "2025-06-13": {
+    "close": 382.87,
+    "market_cap": 119219827545,
+    "shares_outstanding": 311384615
+  },
+  "2025-06-16": {
+    "close": 382.25,
+    "market_cap": 119203191984,
+    "shares_outstanding": 311846153
+  },
+  "2025-06-17": {
+    "close": 375.18,
+    "market_cap": 117056160000,
+    "shares_outstanding": 312000000
+  },
+  "2025-06-18": {
+    "close": 369.03,
+    "market_cap": 115194133789,
+    "shares_outstanding": 312153846
+  },
+  "2025-06-20": {
+    "close": 369.7,
+    "market_cap": 115517030599,
+    "shares_outstanding": 312461538
+  },
+  "2025-06-23": {
+    "close": 367.18,
+    "market_cap": 114899095046,
+    "shares_outstanding": 312923076
+  },
+  "2025-06-24": {
+    "close": 377.02,
+    "market_cap": 118036261509,
+    "shares_outstanding": 313076923
+  },
+  "2025-06-25": {
+    "close": 388.67,
+    "market_cap": 121743402987,
+    "shares_outstanding": 313230769
+  },
+  "2025-06-26": {
+    "close": 386.44,
+    "market_cap": 121104350621,
+    "shares_outstanding": 313384615
+  },
+  "2025-06-27": {
+    "close": 383.88,
+    "market_cap": 120361144409,
+    "shares_outstanding": 313538461
+  },
+  "2025-06-30": {
+    "close": 404.23,
+    "market_cap": 126928220000,
+    "shares_outstanding": 314000000
+  },
+  "2025-07-01": {
+    "close": 373.3,
+    "market_cap": 117240545506,
+    "shares_outstanding": 314065217
+  },
+  "2025-07-02": {
+    "close": 402.28,
+    "market_cap": 126368390990,
+    "shares_outstanding": 314130434
+  },
+  "2025-07-03": {
+    "close": 403.99,
+    "market_cap": 126931901451,
+    "shares_outstanding": 314195652
+  },
+  "2025-07-07": {
+    "close": 395.67,
+    "market_cap": 124421011664,
+    "shares_outstanding": 314456521
+  },
+  "2025-07-08": {
+    "close": 396.94,
+    "market_cap": 124846259079,
+    "shares_outstanding": 314521739
+  },
+  "2025-07-09": {
+    "close": 415.41,
+    "market_cap": 130682567392,
+    "shares_outstanding": 314586956
+  },
+  "2025-07-10": {
+    "close": 421.74,
+    "market_cap": 132701407441,
+    "shares_outstanding": 314652173
+  },
+  "2025-07-11": {
+    "close": 434.58,
+    "market_cap": 136769883781,
+    "shares_outstanding": 314717391
+  },
+  "2025-07-14": {
+    "close": 451.02,
+    "market_cap": 142032080654,
+    "shares_outstanding": 314913043
+  },
+  "2025-07-15": {
+    "close": 442.31,
+    "market_cap": 139318034181,
+    "shares_outstanding": 314978260
+  },
+  "2025-07-16": {
+    "close": 455.9,
+    "market_cap": 143628321620,
+    "shares_outstanding": 315043478
+  },
+  "2025-07-17": {
+    "close": 451.34,
+    "market_cap": 142221158401,
+    "shares_outstanding": 315108695
+  },
+  "2025-07-18": {
+    "close": 423.22,
+    "market_cap": 133387903460,
+    "shares_outstanding": 315173913
+  },
+  "2025-07-21": {
+    "close": 426.28,
+    "market_cap": 134435738168,
+    "shares_outstanding": 315369565
+  },
+  "2025-07-22": {
+    "close": 426.4,
+    "market_cap": 134501391045,
+    "shares_outstanding": 315434782
+  },
+  "2025-07-23": {
+    "close": 412.67,
+    "market_cap": 130197385000,
+    "shares_outstanding": 315500000
+  },
+  "2025-07-24": {
+    "close": 414.92,
+    "market_cap": 130934319838,
+    "shares_outstanding": 315565217
+  },
+  "2025-07-25": {
+    "close": 405.89,
+    "market_cap": 128111236856,
+    "shares_outstanding": 315630434
+  },
+  "2025-07-28": {
+    "close": 403.8,
+    "market_cap": 127530573527,
+    "shares_outstanding": 315826086
+  },
+  "2025-07-29": {
+    "close": 394.66,
+    "market_cap": 124669662037,
+    "shares_outstanding": 315891304
+  },
+  "2025-07-30": {
+    "close": 395.04,
+    "market_cap": 124815464056,
+    "shares_outstanding": 315956521
+  },
+  "2025-07-31": {
+    "close": 401.86,
+    "market_cap": 126996496035,
+    "shares_outstanding": 316021739
+  },
+  "2025-08-01": {
+    "close": 366.63,
+    "market_cap": 115886960678,
+    "shares_outstanding": 316086956
+  },
+  "2025-08-04": {
+    "close": 389.24,
+    "market_cap": 123109842338,
+    "shares_outstanding": 316282608
+  },
+  "2025-08-05": {
+    "close": 375.46,
+    "market_cap": 118775954750,
+    "shares_outstanding": 316347826
+  },
+  "2025-08-06": {
+    "close": 383.41,
+    "market_cap": 121315924817,
+    "shares_outstanding": 316413043
+  },
+  "2025-08-07": {
+    "close": 402.01,
+    "market_cap": 127227425303,
+    "shares_outstanding": 316478260
+  },
+  "2025-08-08": {
+    "close": 395.13,
+    "market_cap": 125075824462,
+    "shares_outstanding": 316543478
+  },
+  "2025-08-11": {
+    "close": 400.25,
+    "market_cap": 126774836782,
+    "shares_outstanding": 316739130
+  },
+  "2025-08-12": {
+    "close": 394.39,
+    "market_cap": 124944466413,
+    "shares_outstanding": 316804347
+  },
+  "2025-08-13": {
+    "close": 389.9,
+    "market_cap": 123547443394,
+    "shares_outstanding": 316869565
+  },
+  "2025-08-14": {
+    "close": 372.94,
+    "market_cap": 118197657599,
+    "shares_outstanding": 316934782
+  },
+  "2025-08-15": {
+    "close": 366.32,
+    "market_cap": 116123440000,
+    "shares_outstanding": 317000000
+  },
+  "2025-08-18": {
+    "close": 363.6,
+    "market_cap": 115332339067,
+    "shares_outstanding": 317195652
+  },
+  "2025-08-19": {
+    "close": 336.57,
+    "market_cap": 106780490679,
+    "shares_outstanding": 317260869
+  },
+  "2025-08-20": {
+    "close": 344.37,
+    "market_cap": 109277584236,
+    "shares_outstanding": 317326086
+  },
+  "2025-08-21": {
+    "close": 337.58,
+    "market_cap": 107144956404,
+    "shares_outstanding": 317391304
+  },
+  "2025-08-22": {
+    "close": 358.13,
+    "market_cap": 113690703866,
+    "shares_outstanding": 317456521
+  },
+  "2025-08-25": {
+    "close": 343.2,
+    "market_cap": 109018225774,
+    "shares_outstanding": 317652173
+  },
+  "2025-08-26": {
+    "close": 351.36,
+    "market_cap": 111633182502,
+    "shares_outstanding": 317717391
+  },
+  "2025-08-27": {
+    "close": 342.06,
+    "market_cap": 108700718892,
+    "shares_outstanding": 317782608
+  },
+  "2025-08-28": {
+    "close": 338.84,
+    "market_cap": 107699557362,
+    "shares_outstanding": 317847826
+  },
+  "2025-08-29": {
+    "close": 334.41,
+    "market_cap": 106313300710,
+    "shares_outstanding": 317913043
+  },
+  "2025-09-02": {
+    "close": 341.62,
+    "market_cap": 108694572159,
+    "shares_outstanding": 318173913
+  },
+  "2025-09-03": {
+    "close": 330.26,
+    "market_cap": 105101655074,
+    "shares_outstanding": 318239130
+  },
+  "2025-09-04": {
+    "close": 327.59,
+    "market_cap": 104273321034,
+    "shares_outstanding": 318304347
+  },
+  "2025-09-05": {
+    "close": 335.87,
+    "market_cap": 106930785797,
+    "shares_outstanding": 318369565
+  },
+  "2025-09-08": {
+    "close": 329.9,
+    "market_cap": 105094665088,
+    "shares_outstanding": 318565217
+  },
+  "2025-09-09": {
+    "close": 328.53,
+    "market_cap": 104679656482,
+    "shares_outstanding": 318630434
+  },
+  "2025-09-10": {
+    "close": 326.45,
+    "market_cap": 104038195595,
+    "shares_outstanding": 318695652
+  },
+  "2025-09-11": {
+    "close": 326.02,
+    "market_cap": 103922418511,
+    "shares_outstanding": 318760869
+  },
+  "2025-09-12": {
+    "close": 331.44,
+    "market_cap": 105671717944,
+    "shares_outstanding": 318826086
+  },
+  "2025-09-15": {
+    "close": 327.79,
+    "market_cap": 104572135827,
+    "shares_outstanding": 319021739
+  },
+  "2025-09-16": {
+    "close": 335.09,
+    "market_cap": 106922848086,
+    "shares_outstanding": 319086956
+  },
+  "2025-09-17": {
+    "close": 329.71,
+    "market_cap": 105227662960,
+    "shares_outstanding": 319152173
+  },
+  "2025-09-18": {
+    "close": 349.12,
+    "market_cap": 111445175546,
+    "shares_outstanding": 319217391
+  },
+  "2025-09-19": {
+    "close": 344.75,
+    "market_cap": 110072679108,
+    "shares_outstanding": 319282608
+  },
+  "2025-09-22": {
+    "close": 335.93,
+    "market_cap": 107322331882,
+    "shares_outstanding": 319478260
+  },
+  "2025-09-23": {
+    "close": 327.78,
+    "market_cap": 104739961219,
+    "shares_outstanding": 319543478
+  },
+  "2025-09-24": {
+    "close": 323.31,
+    "market_cap": 103332687180,
+    "shares_outstanding": 319608695
+  },
+  "2025-09-25": {
+    "close": 300.7,
+    "market_cap": 96125945639,
+    "shares_outstanding": 319673913
+  },
+  "2025-09-26": {
+    "close": 309.06,
+    "market_cap": 98818575518,
+    "shares_outstanding": 319739130
+  },
+  "2025-09-29": {
+    "close": 326.42,
+    "market_cap": 104433111540,
+    "shares_outstanding": 319934782
+  },
+  "2025-09-30": {
+    "close": 322.21,
+    "market_cap": 103107200000,
+    "shares_outstanding": 320000000
+  },
+  "2025-10-01": {
+    "close": 338.41,
+    "market_cap": 108386837373,
+    "shares_outstanding": 320282608
+  },
+  "2025-10-02": {
+    "close": 352.33,
+    "market_cap": 112944742906,
+    "shares_outstanding": 320565217
+  },
+  "2025-10-03": {
+    "close": 351.63,
+    "market_cap": 112819721056,
+    "shares_outstanding": 320847826
+  },
+  "2025-10-06": {
+    "close": 359.69,
+    "market_cap": 115710709068,
+    "shares_outstanding": 321695652
+  },
+  "2025-10-07": {
+    "close": 328.4,
+    "market_cap": 105737660584,
+    "shares_outstanding": 321978260
+  },
+  "2025-10-08": {
+    "close": 330.8,
+    "market_cap": 106603895465,
+    "shares_outstanding": 322260869
+  },
+  "2025-10-09": {
+    "close": 320.29,
+    "market_cap": 103307450569,
+    "shares_outstanding": 322543478
+  },
+  "2025-10-10": {
+    "close": 304.79,
+    "market_cap": 98394162752,
+    "shares_outstanding": 322826086
+  },
+  "2025-10-13": {
+    "close": 315.47,
+    "market_cap": 102109409334,
+    "shares_outstanding": 323673913
+  },
+  "2025-10-14": {
+    "close": 300.67,
+    "market_cap": 97404007169,
+    "shares_outstanding": 323956521
+  },
+  "2025-10-15": {
+    "close": 296.76,
+    "market_cap": 96221204219,
+    "shares_outstanding": 324239130
+  },
+  "2025-10-16": {
+    "close": 283.84,
+    "market_cap": 92112250398,
+    "shares_outstanding": 324521739
+  },
+  "2025-10-17": {
+    "close": 289.87,
+    "market_cap": 94151036065,
+    "shares_outstanding": 324804347
+  },
+  "2025-10-20": {
+    "close": 296.61,
+    "market_cap": 96591691034,
+    "shares_outstanding": 325652173
+  },
+  "2025-10-21": {
+    "close": 301.91,
+    "market_cap": 98402970034,
+    "shares_outstanding": 325934782
+  },
+  "2025-10-22": {
+    "close": 280.81,
+    "market_cap": 91605105567,
+    "shares_outstanding": 326217391
+  },
+  "2025-10-23": {
+    "close": 284.92,
+    "market_cap": 93026380000,
+    "shares_outstanding": 326500000
+  },
+  "2025-10-24": {
+    "close": 289.08,
+    "market_cap": 94466316321,
+    "shares_outstanding": 326782608
+  },
+  "2025-10-27": {
+    "close": 295.63,
+    "market_cap": 96857385203,
+    "shares_outstanding": 327630434
+  },
+  "2025-10-28": {
+    "close": 284.64,
+    "market_cap": 93337168560,
+    "shares_outstanding": 327913043
+  },
+  "2025-10-29": {
+    "close": 275.36,
+    "market_cap": 90371954735,
+    "shares_outstanding": 328195652
+  },
+  "2025-10-30": {
+    "close": 254.57,
+    "market_cap": 83620710648,
+    "shares_outstanding": 328478260
+  },
+  "2025-10-31": {
+    "close": 269.51,
+    "market_cap": 88604341804,
+    "shares_outstanding": 328760869
+  },
+  "2025-11-03": {
+    "close": 264.67,
+    "market_cap": 87237533306,
+    "shares_outstanding": 329608695
+  },
+  "2025-11-04": {
+    "close": 246.99,
+    "market_cap": 81479853175,
+    "shares_outstanding": 329891304
+  },
+  "2025-11-05": {
+    "close": 255.0,
+    "market_cap": 84194347815,
+    "shares_outstanding": 330173913
+  },
+  "2025-11-06": {
+    "close": 237.2,
+    "market_cap": 78384286781,
+    "shares_outstanding": 330456521
+  },
+  "2025-11-07": {
+    "close": 241.93,
+    "market_cap": 80015717721,
+    "shares_outstanding": 330739130
+  },
+  "2025-11-10": {
+    "close": 238.88,
+    "market_cap": 79209492049,
+    "shares_outstanding": 331586956
+  },
+  "2025-11-11": {
+    "close": 231.35,
+    "market_cap": 76778023863,
+    "shares_outstanding": 331869565
+  },
+  "2025-11-12": {
+    "close": 224.61,
+    "market_cap": 74604699578,
+    "shares_outstanding": 332152173
+  },
+  "2025-11-13": {
+    "close": 208.54,
+    "market_cap": 69325949438,
+    "shares_outstanding": 332434782
+  },
+  "2025-11-14": {
+    "close": 199.75,
+    "market_cap": 66460298852,
+    "shares_outstanding": 332717391
+  },
+  "2025-11-17": {
+    "close": 195.42,
+    "market_cap": 65185314706,
+    "shares_outstanding": 333565217
+  },
+  "2025-11-18": {
+    "close": 206.8,
+    "market_cap": 69039730417,
+    "shares_outstanding": 333847826
+  },
+  "2025-11-19": {
+    "close": 186.5,
+    "market_cap": 62315325941,
+    "shares_outstanding": 334130434
+  },
+  "2025-11-20": {
+    "close": 177.13,
+    "market_cap": 59234582307,
+    "shares_outstanding": 334413043
+  },
+  "2025-11-21": {
+    "close": 170.5,
+    "market_cap": 57065608666,
+    "shares_outstanding": 334695652
+  },
+  "2025-11-24": {
+    "close": 179.04,
+    "market_cap": 60075704301,
+    "shares_outstanding": 335543478
+  },
+  "2025-11-25": {
+    "close": 172.19,
+    "market_cap": 57825893748,
+    "shares_outstanding": 335826086
+  },
+  "2025-11-26": {
+    "close": 175.64,
+    "market_cap": 59034131190,
+    "shares_outstanding": 336108695
+  },
+  "2025-11-28": {
+    "close": 177.18,
+    "market_cap": 59651883905,
+    "shares_outstanding": 336673913
+  },
+  "2025-12-01": {
+    "close": 171.42,
+    "market_cap": 57857976499,
+    "shares_outstanding": 337521739
+  },
+  "2025-12-02": {
+    "close": 181.33,
+    "market_cap": 61254062242,
+    "shares_outstanding": 337804347
+  },
+  "2025-12-03": {
+    "close": 188.39,
+    "market_cap": 63692201641,
+    "shares_outstanding": 338086956
+  },
+  "2025-12-04": {
+    "close": 186.01,
+    "market_cap": 62940122786,
+    "shares_outstanding": 338369565
+  },
+  "2025-12-05": {
+    "close": 178.99,
+    "market_cap": 60615352445,
+    "shares_outstanding": 338652173
+  },
+  "2025-12-08": {
+    "close": 183.69,
+    "market_cap": 62362755000,
+    "shares_outstanding": 339500000
+  },
+  "2025-12-09": {
+    "close": 188.99,
+    "market_cap": 64215515086,
+    "shares_outstanding": 339782608
+  },
+  "2025-12-10": {
+    "close": 184.64,
+    "market_cap": 62789641667,
+    "shares_outstanding": 340065217
+  },
+  "2025-12-11": {
+    "close": 183.3,
+    "market_cap": 62385756506,
+    "shares_outstanding": 340347826
+  },
+  "2025-12-12": {
+    "close": 176.45,
+    "market_cap": 60104240079,
+    "shares_outstanding": 340630434
+  },
+  "2025-12-15": {
+    "close": 162.08,
+    "market_cap": 55346796381,
+    "shares_outstanding": 341478260
+  },
+  "2025-12-16": {
+    "close": 167.5,
+    "market_cap": 57244945558,
+    "shares_outstanding": 341760869
+  },
+  "2025-12-17": {
+    "close": 160.38,
+    "market_cap": 54856933002,
+    "shares_outstanding": 342043478
+  },
+  "2025-12-18": {
+    "close": 158.24,
+    "market_cap": 54169679849,
+    "shares_outstanding": 342326086
+  },
+  "2025-12-19": {
+    "close": 164.82,
+    "market_cap": 56468765110,
+    "shares_outstanding": 342608695
+  },
+  "2025-12-22": {
+    "close": 164.32,
+    "market_cap": 56436775531,
+    "shares_outstanding": 343456521
+  },
+  "2025-12-23": {
+    "close": 157.88,
+    "market_cap": 54269533844,
+    "shares_outstanding": 343739130
+  },
+  "2025-12-24": {
+    "close": 158.71,
+    "market_cap": 54599690197,
+    "shares_outstanding": 344021739
+  },
+  "2025-12-26": {
+    "close": 158.81,
+    "market_cap": 54723854482,
+    "shares_outstanding": 344586956
+  },
+  "2025-12-29": {
+    "close": 155.39,
+    "market_cap": 53677110775,
+    "shares_outstanding": 345434782
+  },
+  "2025-12-30": {
+    "close": 155.61,
+    "market_cap": 53797083214,
+    "shares_outstanding": 345717391
+  },
+  "2025-12-31": {
+    "close": 151.95,
+    "market_cap": 52574700000,
+    "shares_outstanding": 346000000
+  },
+  "2026-01-02": {
+    "close": 157.16,
+    "market_cap": 54489118205,
+    "shares_outstanding": 346711111
+  },
+  "2026-01-05": {
+    "close": 164.72,
+    "market_cap": 57285955427,
+    "shares_outstanding": 347777777
+  },
+  "2026-01-06": {
+    "close": 157.97,
+    "market_cap": 54994622614,
+    "shares_outstanding": 348133333
+  },
+  "2026-01-07": {
+    "close": 161.83,
+    "market_cap": 56395956745,
+    "shares_outstanding": 348488888
+  },
+  "2026-01-08": {
+    "close": 166.97,
+    "market_cap": 58246556815,
+    "shares_outstanding": 348844444
+  },
+  "2026-01-09": {
+    "close": 157.33,
+    "market_cap": 54939636000,
+    "shares_outstanding": 349200000
+  },
+  "2026-01-12": {
+    "close": 162.23,
+    "market_cap": 56823761225,
+    "shares_outstanding": 350266666
+  },
+  "2026-01-13": {
+    "close": 172.99,
+    "market_cap": 60654138184,
+    "shares_outstanding": 350622222
+  },
+  "2026-01-14": {
+    "close": 179.33,
+    "market_cap": 62940844749,
+    "shares_outstanding": 350977777
+  },
+  "2026-01-15": {
+    "close": 170.91,
+    "market_cap": 60046379943,
+    "shares_outstanding": 351333333
+  },
+  "2026-01-16": {
+    "close": 173.71,
+    "market_cap": 61091876734,
+    "shares_outstanding": 351688888
+  },
+  "2026-01-20": {
+    "close": 160.23,
+    "market_cap": 56578993316,
+    "shares_outstanding": 353111111
+  },
+  "2026-01-21": {
+    "close": 163.81,
+    "market_cap": 57901374557,
+    "shares_outstanding": 353466666
+  },
+  "2026-01-22": {
+    "close": 160.98,
+    "market_cap": 56958301298,
+    "shares_outstanding": 353822222
+  },
+  "2026-01-23": {
+    "close": 163.11,
+    "market_cap": 57769937206,
+    "shares_outstanding": 354177777
+  },
+  "2026-01-26": {
+    "close": 160.58,
+    "market_cap": 57045152818,
+    "shares_outstanding": 355244444
+  },
+  "2026-01-27": {
+    "close": 161.58,
+    "market_cap": 57457848000,
+    "shares_outstanding": 355600000
+  },
+  "2026-01-28": {
+    "close": 158.45,
+    "market_cap": 56401157690,
+    "shares_outstanding": 355955555
+  },
+  "2026-01-29": {
+    "close": 143.19,
+    "market_cap": 51020187984,
+    "shares_outstanding": 356311111
+  },
+  "2026-01-30": {
+    "close": 149.71,
+    "market_cap": 53396566567,
+    "shares_outstanding": 356666666
+  },
+  "2026-02-02": {
+    "close": 139.63,
+    "market_cap": 49950305287,
+    "shares_outstanding": 357733333
+  },
+  "2026-02-03": {
+    "close": 133.26,
+    "market_cap": 47718925215,
+    "shares_outstanding": 358088888
+  },
+  "2026-02-04": {
+    "close": 129.09,
+    "market_cap": 46271593276,
+    "shares_outstanding": 358444444
+  },
+  "2026-02-05": {
+    "close": 106.99,
+    "market_cap": 38388012000,
+    "shares_outstanding": 358800000
+  },
+  "2026-02-06": {
+    "close": 134.93,
+    "market_cap": 48460859036,
+    "shares_outstanding": 359155555
+  },
+  "2026-02-09": {
+    "close": 138.44,
+    "market_cap": 49869164414,
+    "shares_outstanding": 360222222
+  },
+  "2026-02-10": {
+    "close": 133.0,
+    "market_cap": 47956844341,
+    "shares_outstanding": 360577777
+  },
+  "2026-02-11": {
+    "close": 126.07,
+    "market_cap": 45502865291,
+    "shares_outstanding": 360933333
+  },
+  "2026-02-12": {
+    "close": 123.0,
+    "market_cap": 44438533224,
+    "shares_outstanding": 361288888
+  },
+  "2026-02-13": {
+    "close": 133.88,
+    "market_cap": 48416958163,
+    "shares_outstanding": 361644444
+  },
+  "2026-02-17": {
+    "close": 128.67,
+    "market_cap": 46715787914,
+    "shares_outstanding": 363066666
+  },
+  "2026-02-18": {
+    "close": 125.2,
+    "market_cap": 45500462194,
+    "shares_outstanding": 363422222
+  },
+  "2026-02-19": {
+    "close": 129.45,
+    "market_cap": 47091033233,
+    "shares_outstanding": 363777777
+  },
+  "2026-02-20": {
+    "close": 131.05,
+    "market_cap": 47719673290,
+    "shares_outstanding": 364133333
+  },
+  "2026-02-23": {
+    "close": 123.71,
+    "market_cap": 45178892000,
+    "shares_outstanding": 365200000
+  },
+  "2026-02-24": {
+    "close": 124.61,
+    "market_cap": 45551877709,
+    "shares_outstanding": 365555555
+  },
+  "2026-02-25": {
+    "close": 135.65,
+    "market_cap": 49635842207,
+    "shares_outstanding": 365911111
+  },
+  "2026-02-26": {
+    "close": 133.4,
+    "market_cap": 48859973244,
+    "shares_outstanding": 366266666
+  },
+  "2026-02-27": {
+    "close": 129.5,
+    "market_cap": 47477577749,
+    "shares_outstanding": 366622222
+  },
+  "2026-03-02": {
+    "close": 137.65,
+    "market_cap": 50612375433,
+    "shares_outstanding": 367688888
+  },
+  "2026-03-03": {
+    "close": 132.68,
+    "market_cap": 48832136830,
+    "shares_outstanding": 368044444
+  },
+  "2026-03-04": {
+    "close": 146.44,
+    "market_cap": 53948496000,
+    "shares_outstanding": 368400000
+  },
+  "2026-03-05": {
+    "close": 139.81,
+    "market_cap": 51555714145,
+    "shares_outstanding": 368755555
+  },
+  "2026-03-06": {
+    "close": 133.53,
+    "market_cap": 49287406652,
+    "shares_outstanding": 369111111
+  },
+  "2026-03-09": {
+    "close": 138.95,
+    "market_cap": 51436202114,
+    "shares_outstanding": 370177777
+  },
+  "2026-03-10": {
+    "close": 138.46,
+    "market_cap": 51304045287,
+    "shares_outstanding": 370533333
+  },
+  "2026-03-11": {
+    "close": 138.33,
+    "market_cap": 51305059877,
+    "shares_outstanding": 370888888
+  },
+  "2026-03-12": {
+    "close": 137.34,
+    "market_cap": 50986711939,
+    "shares_outstanding": 371244444
+  },
+  "2026-03-13": {
+    "close": 139.67,
+    "market_cap": 51901372000,
+    "shares_outstanding": 371600000
+  },
+  "2026-03-16": {
+    "close": 147.52,
+    "market_cap": 54975786568,
+    "shares_outstanding": 372666666
+  },
+  "2026-03-17": {
+    "close": 150.28,
+    "market_cap": 56057779522,
+    "shares_outstanding": 373022222
+  },
+  "2026-03-18": {
+    "close": 140.56,
+    "market_cap": 52481980335,
+    "shares_outstanding": 373377777
+  },
+  "2026-03-19": {
+    "close": 138.24,
+    "market_cap": 51664895954,
+    "shares_outstanding": 373733333
+  },
+  "2026-03-20": {
+    "close": 135.66,
+    "market_cap": 50748898546,
+    "shares_outstanding": 374088888
+  },
+  "2026-03-23": {
+    "close": 138.2,
+    "market_cap": 51846497701,
+    "shares_outstanding": 375155555
+  },
+  "2026-03-24": {
+    "close": 136.25,
+    "market_cap": 51163388874,
+    "shares_outstanding": 375511111
+  },
+  "2026-03-25": {
+    "close": 139.13,
+    "market_cap": 52294329241,
+    "shares_outstanding": 375866666
+  },
+  "2026-03-26": {
+    "close": 132.93,
+    "market_cap": 50011219970,
+    "shares_outstanding": 376222222
+  },
+  "2026-03-27": {
+    "close": 126.03,
+    "market_cap": 47460097235,
+    "shares_outstanding": 376577777
+  },
+  "2026-03-30": {
+    "close": 121.44,
+    "market_cap": 45861141279,
+    "shares_outstanding": 377644444
+  },
+  "2026-03-31": {
+    "close": 124.8,
+    "market_cap": 47174400000,
+    "shares_outstanding": 378000000
+  },
+  "2026-04-01": {
+    "close": 122.78,
+    "market_cap": 46410840000,
+    "shares_outstanding": 378000000
+  },
+  "2026-04-02": {
+    "close": 119.83,
+    "market_cap": 45295740000,
+    "shares_outstanding": 378000000
+  }
+}
