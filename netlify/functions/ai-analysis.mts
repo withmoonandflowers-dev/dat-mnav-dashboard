@@ -63,7 +63,7 @@ IMPORTANT: Every sentence must reference at least one specific number from the d
     // 3. Call Claude Haiku (cheapest, fastest)
     const client = new Anthropic({ apiKey });
     const message = await client.messages.create({
-      model: "claude-haiku-4-20250414",
+      model: "claude-3-5-haiku-20241022",
       max_tokens: 800,
       messages: [{ role: "user", content: prompt }],
     });
@@ -85,7 +85,7 @@ IMPORTANT: Every sentence must reference at least one specific number from the d
       JSON.stringify({
         success: true,
         timestamp: new Date().toISOString(),
-        model: "claude-haiku-4-20250414",
+        model: "claude-3-5-haiku-20241022",
         analysis,
         live_data_used: {
           btc_price: liveData.btc.price,
