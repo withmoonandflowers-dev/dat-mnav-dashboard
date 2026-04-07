@@ -3,15 +3,12 @@ import type { DataPoint } from '../types'
 import { t } from '../i18n'
 import { useLocale } from './LocaleContext'
 
-interface LiveApiResponse {
-  success: boolean
+interface LiveData {
+  btcPrice: number
+  btc24hChange: number | null
+  mstrPrice: number | null
   timestamp: string
-  btc: { price: number; change_24h_pct: number | null }
-  mstr: { price: number | null; market_cap: number | null; shares_diluted: number }
-  holdings: { btc: number; as_of: string; btc_nav: number }
-  mnav: { value: number | null; premium_pct: number | null; note: string }
-  sources: Record<string, string>
-  error?: string
+  source: string
 }
 
 interface Props {
@@ -21,20 +18,43 @@ interface Props {
 export default function LiveRefresh({ latestStatic }: Props) {
   const { locale } = useLocale()
   const [loading, setLoading] = useState(true)
-  const [live, setLive] = useState<LiveApiResponse | null>(null)
+  const [live, setLive] = useState<LiveData | null>(null)
   const [error, setError] = useState<string | null>(null)
 
   const fetchLive = async () => {
     setLoading(true)
     setError(null)
     try {
-      const resp = await fetch('/api/live-data')
-      const data: LiveApiResponse = await resp.json()
-      if (data.success) {
-        setLive(data)
-      } else {
-        throw new Error(data.error || 'API error')
+      // CoinGecko — free, CORS-friendly, no key needed
+      const resp = await fetch(
+        'https://api.coingecko.com/api/v3/simple/price?ids=bitcoin&vs_currencies=usd&include_24hr_change=true'
+      )
+      if (!resp.ok) throw new Error(`CoinGecko: ${resp.status}`)
+      const json = await resp.json()
+      const btcPrice = json.bitcoin?.usd
+      if (!btcPrice) throw new Error('Invalid BTC data')
+
+      // Try MSTR from a CORS-friendly proxy (may fail)
+      let mstrPrice: number | null = null
+      try {
+        const yResp = await fetch(
+          'https://query1.finance.yahoo.com/v8/finance/chart/MSTR?interval=1d&range=1d'
+        )
+        if (yResp.ok) {
+          const yJson = await yResp.json()
+          mstrPrice = yJson.chart?.result?.[0]?.meta?.regularMarketPrice ?? null
+        }
+      } catch {
+        // Expected: Yahoo Finance blocks browser CORS
       }
+
+      setLive({
+        btcPrice,
+        btc24hChange: json.bitcoin?.usd_24h_change ? +json.bitcoin.usd_24h_change.toFixed(2) : null,
+        mstrPrice,
+        timestamp: new Date().toISOString(),
+        source: mstrPrice ? 'CoinGecko + Yahoo Finance' : 'CoinGecko (BTC)',
+      })
     } catch (e: any) {
       setError(e.message)
     } finally {
@@ -42,16 +62,18 @@ export default function LiveRefresh({ latestStatic }: Props) {
     }
   }
 
-  // Auto-fetch on mount
   useEffect(() => { fetchLive() }, [])
 
-  const isLive = live?.success
-  const mnav = live?.mnav.value
-  const isPremium = (mnav ?? 0) >= 1
+  // Compute live mNAV estimate
+  const liveMnav = live
+    ? latestStatic.mstr_market_cap / (latestStatic.btc_holdings * live.btcPrice)
+    : null
+  const livePremiumPct = liveMnav ? (liveMnav - 1) * 100 : null
+  const isPremium = (liveMnav ?? 0) >= 1
+  const isLive = !!live
 
   return (
     <div className="bg-[#141414] border border-[#2a2a2a] rounded-xl p-4 mb-6">
-      {/* Status bar */}
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div className="flex items-center gap-3">
           <div className={`w-2.5 h-2.5 rounded-full ${
@@ -65,8 +87,8 @@ export default function LiveRefresh({ latestStatic }: Props) {
             </p>
             <p className="text-xs text-gray-500">
               {loading ? t(locale, 'live.fetchingDesc') :
-               isLive ? `${new Date(live!.timestamp).toLocaleString()} · ${live!.mnav.note}` :
-               `Static data as of ${latestStatic.date}. ${error}`}
+               isLive ? `${new Date(live!.timestamp).toLocaleString()} · ${live!.source}` :
+               `${t(locale, 'live.staticFallback')} ${latestStatic.date}. ${error || ''}`}
             </p>
           </div>
         </div>
@@ -86,43 +108,44 @@ export default function LiveRefresh({ latestStatic }: Props) {
         </button>
       </div>
 
-      {/* Live data cards */}
       {isLive && (
         <div className="mt-3 pt-3 border-t border-[#2a2a2a] grid grid-cols-2 sm:grid-cols-5 gap-3 text-sm">
           <div>
             <p className="text-gray-500 text-xs">{t(locale, 'live.liveMnav')}</p>
             <p className={`text-xl font-bold ${isPremium ? 'text-green-400' : 'text-red-400'}`}>
-              {mnav ? `${mnav.toFixed(2)}x` : 'N/A'}
+              {liveMnav ? `${liveMnav.toFixed(2)}x` : 'N/A'}
             </p>
             <p className="text-xs text-gray-600">
-              {live!.mnav.premium_pct != null
-                ? `${live!.mnav.premium_pct >= 0 ? '+' : ''}${live!.mnav.premium_pct}% ${isPremium ? t(locale, 'live.premium') : t(locale, 'live.discount')}`
+              {livePremiumPct != null
+                ? `${livePremiumPct >= 0 ? '+' : ''}${livePremiumPct.toFixed(1)}% ${isPremium ? t(locale, 'live.premium') : t(locale, 'live.discount')}`
                 : ''}
             </p>
           </div>
           <div>
             <p className="text-gray-500 text-xs">{t(locale, 'live.liveBtc')}</p>
             <p className="text-white font-semibold">
-              ${live!.btc.price.toLocaleString(undefined, { maximumFractionDigits: 0 })}
+              ${live!.btcPrice.toLocaleString(undefined, { maximumFractionDigits: 0 })}
             </p>
-            <p className={`text-xs ${(live!.btc.change_24h_pct ?? 0) >= 0 ? 'text-green-500' : 'text-red-500'}`}>
-              {live!.btc.change_24h_pct != null ? `${live!.btc.change_24h_pct >= 0 ? '+' : ''}${live!.btc.change_24h_pct}% 24h` : ''}
+            <p className={`text-xs ${(live!.btc24hChange ?? 0) >= 0 ? 'text-green-500' : 'text-red-500'}`}>
+              {live!.btc24hChange != null ? `${live!.btc24hChange >= 0 ? '+' : ''}${live!.btc24hChange}% 24h` : ''}
             </p>
           </div>
           <div>
             <p className="text-gray-500 text-xs">{t(locale, 'live.mstrPrice')}</p>
             <p className="text-white font-semibold">
-              {live!.mstr.price ? `$${live!.mstr.price.toFixed(2)}` : t(locale, 'live.mstrClosed')}
+              {live!.mstrPrice ? `$${live!.mstrPrice.toFixed(2)}` : `$${latestStatic.mstr_close.toFixed(2)} (static)`}
             </p>
           </div>
           <div>
             <p className="text-gray-500 text-xs">{t(locale, 'live.holdings')}</p>
-            <p className="text-orange-400 font-semibold">{live!.holdings.btc.toLocaleString()}</p>
-            <p className="text-xs text-gray-600">{t(locale, 'live.asOf')} {live!.holdings.as_of}</p>
+            <p className="text-orange-400 font-semibold">{latestStatic.btc_holdings.toLocaleString()}</p>
+            <p className="text-xs text-gray-600">{t(locale, 'live.asOf')} 2026-03-23</p>
           </div>
           <div>
             <p className="text-gray-500 text-xs">{t(locale, 'live.btcNav')}</p>
-            <p className="text-orange-400 font-semibold">${(live!.holdings.btc_nav / 1e9).toFixed(1)}B</p>
+            <p className="text-orange-400 font-semibold">
+              ${((latestStatic.btc_holdings * live!.btcPrice) / 1e9).toFixed(1)}B
+            </p>
           </div>
         </div>
       )}

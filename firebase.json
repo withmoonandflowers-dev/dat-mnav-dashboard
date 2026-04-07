@@ -1,0 +1,24 @@
+{
+  "hosting": {
+    "public": "dist",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      { "source": "/api/live-data", "function": { "functionId": "livedata", "region": "asia-east1" } },
+      { "source": "/api/ai-analysis", "function": { "functionId": "aianalysis", "region": "asia-east1" } },
+      { "source": "**", "destination": "/index.html" }
+    ],
+    "headers": [
+      {
+        "source": "/data/**",
+        "headers": [{ "key": "Cache-Control", "value": "public, max-age=300" }]
+      }
+    ]
+  },
+  "functions": [
+    {
+      "source": "fn",
+      "codebase": "default",
+      "runtime": "nodejs20"
+    }
+  ]
+}

@@ -49,20 +49,19 @@ export default function AiSummary() {
     setLoading(true)
     setError(null)
     try {
+      // Try serverless API first (works on Vercel/Netlify with Cloud Functions)
       const resp = await fetch('/api/ai-analysis?locale=' + locale)
-      const json: AiResponse = await resp.json()
-      if (json.rate_limit) {
-        setRateLimit(json.rate_limit)
-      }
-      if (json.success) {
-        setData(json)
-      } else {
+      if (resp.ok) {
+        const json: AiResponse = await resp.json()
+        if (json.rate_limit) setRateLimit(json.rate_limit)
+        if (json.success) { setData(json); return }
         if (json.error === 'rate_limit') {
-          const max = json.rate_limit?.max ?? 0
-          throw new Error(t(locale, 'ai.rateLimitHit', { max }))
+          throw new Error(t(locale, 'ai.rateLimitHit', { max: json.rate_limit?.max ?? 0 }))
         }
         throw new Error(json.error || 'AI analysis failed')
       }
+      // API not available (Firebase Hosting static-only) — show static analysis
+      throw new Error('AI API not available on static hosting. Showing pre-generated analysis.')
     } catch (e: any) {
       setError(e.message)
     } finally {
