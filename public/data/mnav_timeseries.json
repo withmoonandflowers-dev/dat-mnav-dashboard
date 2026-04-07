@@ -8,20 +8,10 @@
       "mstr_stock": "Yahoo Finance v8 chart API",
       "btc_holdings": "strategy.com/purchases (manual compilation)"
     },
-    "generated_at": "2026-04-06T20:39:16.692943",
+    "generated_at": "2026-04-07T09:51:04.646583",
     "total_data_points": 245
   },
   "data": [
-    {
-      "date": "2025-04-11",
-      "mnav": 2.0544,
-      "premium_pct": 105.44,
-      "btc_price": 83403.67,
-      "mstr_close": 299.98,
-      "mstr_market_cap": 90501658254,
-      "btc_holdings": 528185,
-      "btc_nav": 44052567439
-    },
     {
       "date": "2025-04-14",
       "mnav": 2.0944,
@@ -614,23 +604,23 @@
     },
     {
       "date": "2025-07-10",
-      "mnav": 2.0007,
-      "premium_pct": 100.07,
-      "btc_price": 111039.24,
+      "mnav": 1.9142,
+      "premium_pct": 91.42,
+      "btc_price": 116061.03,
       "mstr_close": 421.74,
       "mstr_market_cap": 132701407441,
       "btc_holdings": 597325,
-      "btc_nav": 66326514033
+      "btc_nav": 69326154745
     },
     {
       "date": "2025-07-11",
-      "mnav": 1.9468,
-      "premium_pct": 94.68,
-      "btc_price": 117613.82,
+      "mnav": 1.9403,
+      "premium_pct": 94.03,
+      "btc_price": 118007.6,
       "mstr_close": 434.58,
       "mstr_market_cap": 136769883781,
       "btc_holdings": 597325,
-      "btc_nav": 70253675032
+      "btc_nav": 70488889670
     },
     {
       "date": "2025-07-14",
@@ -1244,23 +1234,23 @@
     },
     {
       "date": "2025-10-08",
-      "mnav": 1.3554,
-      "premium_pct": 35.54,
-      "btc_price": 122885.17,
+      "mnav": 1.351,
+      "premium_pct": 35.1,
+      "btc_price": 123282.52,
       "mstr_close": 330.8,
       "mstr_market_cap": 106603895465,
       "btc_holdings": 640031,
-      "btc_nav": 78650318240
+      "btc_nav": 78904634558
     },
     {
       "date": "2025-10-09",
-      "mnav": 1.3259,
-      "premium_pct": 32.59,
-      "btc_price": 121740.81,
+      "mnav": 1.3308,
+      "premium_pct": 33.08,
+      "btc_price": 121287.22,
       "mstr_close": 320.29,
       "mstr_market_cap": 103307450569,
       "btc_holdings": 640031,
-      "btc_nav": 77917892365
+      "btc_nav": 77627580704
     },
     {
       "date": "2025-10-10",
@@ -1854,23 +1844,23 @@
     },
     {
       "date": "2026-01-06",
-      "mnav": 0.8701,
-      "premium_pct": -12.99,
-      "btc_price": 93805.62,
+      "mnav": 0.8756,
+      "premium_pct": -12.44,
+      "btc_price": 93215.18,
       "mstr_close": 157.97,
       "mstr_market_cap": 54994622614,
       "btc_holdings": 673783,
-      "btc_nav": 63204632060
+      "btc_nav": 62806803626
     },
     {
       "date": "2026-01-07",
-      "mnav": 0.9187,
-      "premium_pct": -8.13,
-      "btc_price": 91109.2,
+      "mnav": 0.9035,
+      "premium_pct": -9.65,
+      "btc_price": 92639.95,
       "mstr_close": 161.83,
       "mstr_market_cap": 56395956745,
       "btc_holdings": 673783,
-      "btc_nav": 61387830104
+      "btc_nav": 62419223431
     },
     {
       "date": "2026-01-08",
@@ -2461,6 +2451,16 @@
       "mstr_market_cap": 45295740000,
       "btc_holdings": 762099,
       "btc_nav": 51075867359
+    },
+    {
+      "date": "2026-04-06",
+      "mnav": 0.9192,
+      "premium_pct": -8.08,
+      "btc_price": 68899.6,
+      "mstr_close": 127.69,
+      "mstr_market_cap": 48266820000,
+      "btc_holdings": 762099,
+      "btc_nav": 52508316260
     }
   ]
 }
