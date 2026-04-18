@@ -8,20 +8,10 @@
       "mstr_stock": "Yahoo Finance v8 chart API",
       "btc_holdings": "strategy.com/purchases (manual compilation)"
     },
-    "generated_at": "2026-04-17T10:22:24.578161",
+    "generated_at": "2026-04-18T08:07:55.132277",
     "total_data_points": 248
   },
   "data": [
-    {
-      "date": "2025-04-22",
-      "mnav": 2.0817,
-      "premium_pct": 108.17,
-      "btc_price": 92890.82,
-      "mstr_close": 343.03,
-      "mstr_market_cap": 104070024483,
-      "btc_holdings": 538200,
-      "btc_nav": 49993839324
-    },
     {
       "date": "2025-04-23",
       "mnav": 2.0793,
@@ -624,23 +614,23 @@
     },
     {
       "date": "2025-07-21",
-      "mnav": 1.8632,
-      "premium_pct": 86.32,
-      "btc_price": 118720.3,
+      "mnav": 1.8826,
+      "premium_pct": 88.26,
+      "btc_price": 117496.58,
       "mstr_close": 426.28,
       "mstr_market_cap": 134435738168,
       "btc_holdings": 607770,
-      "btc_nav": 72154636731
+      "btc_nav": 71410896427
     },
     {
       "date": "2025-07-22",
-      "mnav": 1.8456,
-      "premium_pct": 84.56,
-      "btc_price": 119905.34,
+      "mnav": 1.875,
+      "premium_pct": 87.5,
+      "btc_price": 118027.16,
       "mstr_close": 426.4,
       "mstr_market_cap": 134501391045,
       "btc_holdings": 607770,
-      "btc_nav": 72874868492
+      "btc_nav": 71733367033
     },
     {
       "date": "2025-07-23",
@@ -1264,13 +1254,13 @@
     },
     {
       "date": "2025-10-20",
-      "mnav": 1.3608,
-      "premium_pct": 36.08,
-      "btc_price": 110836.41,
+      "mnav": 1.3569,
+      "premium_pct": 35.69,
+      "btc_price": 111154.61,
       "mstr_close": 296.61,
       "mstr_market_cap": 96591691034,
       "btc_holdings": 640418,
-      "btc_nav": 70981632019
+      "btc_nav": 71185413027
     },
     {
       "date": "2025-10-21",
@@ -2491,6 +2481,16 @@
       "mstr_market_cap": 56299320000,
       "btc_holdings": 762099,
       "btc_nav": 57068419458
+    },
+    {
+      "date": "2026-04-17",
+      "mnav": 1.0684,
+      "premium_pct": 6.84,
+      "btc_price": 77308.44,
+      "mstr_close": 166.52,
+      "mstr_market_cap": 62944560000,
+      "btc_holdings": 762099,
+      "btc_nav": 58916684816
     }
   ]
 }

@@ -1,9 +1,4 @@
 {
-  "2025-03-13": {
-    "close": 263.26,
-    "market_cap": 77924960000,
-    "shares_outstanding": 296000000
-  },
   "2025-03-14": {
     "close": 297.49,
     "market_cap": 88123148823,
@@ -1372,6 +1367,11 @@
   "2026-04-16": {
     "close": 148.94,
     "market_cap": 56299320000,
+    "shares_outstanding": 378000000
+  },
+  "2026-04-17": {
+    "close": 166.52,
+    "market_cap": 62944560000,
     "shares_outstanding": 378000000
   }
 }
