@@ -8,20 +8,10 @@
       "mstr_stock": "Yahoo Finance v8 chart API",
       "btc_holdings": "strategy.com/purchases (manual compilation)"
     },
-    "generated_at": "2026-04-18T08:07:55.132277",
-    "total_data_points": 248
+    "generated_at": "2026-04-19T08:39:02.660167",
+    "total_data_points": 247
   },
   "data": [
-    {
-      "date": "2025-04-23",
-      "mnav": 2.0793,
-      "premium_pct": 107.93,
-      "btc_price": 93775.8,
-      "mstr_close": 345.73,
-      "mstr_market_cap": 104942352122,
-      "btc_holdings": 538200,
-      "btc_nav": 50470135560
-    },
     {
       "date": "2025-04-24",
       "mnav": 2.1151,
@@ -624,23 +614,23 @@
     },
     {
       "date": "2025-07-22",
-      "mnav": 1.875,
-      "premium_pct": 87.5,
-      "btc_price": 118027.16,
+      "mnav": 1.8456,
+      "premium_pct": 84.56,
+      "btc_price": 119905.34,
       "mstr_close": 426.4,
       "mstr_market_cap": 134501391045,
       "btc_holdings": 607770,
-      "btc_nav": 71733367033
+      "btc_nav": 72874868492
     },
     {
       "date": "2025-07-23",
-      "mnav": 1.8058,
-      "premium_pct": 80.58,
-      "btc_price": 118632.49,
+      "mnav": 1.8096,
+      "premium_pct": 80.96,
+      "btc_price": 118379.74,
       "mstr_close": 412.67,
       "mstr_market_cap": 130197385000,
       "btc_holdings": 607770,
-      "btc_nav": 72101268447
+      "btc_nav": 71947654580
     },
     {
       "date": "2025-07-24",
@@ -1254,23 +1244,23 @@
     },
     {
       "date": "2025-10-20",
-      "mnav": 1.3569,
-      "premium_pct": 35.69,
-      "btc_price": 111154.61,
+      "mnav": 1.3608,
+      "premium_pct": 36.08,
+      "btc_price": 110836.41,
       "mstr_close": 296.61,
       "mstr_market_cap": 96591691034,
       "btc_holdings": 640418,
-      "btc_nav": 71185413027
+      "btc_nav": 70981632019
     },
     {
       "date": "2025-10-21",
-      "mnav": 1.409,
-      "premium_pct": 40.9,
-      "btc_price": 109054.77,
+      "mnav": 1.421,
+      "premium_pct": 42.1,
+      "btc_price": 108131.87,
       "mstr_close": 301.91,
       "mstr_market_cap": 98402970034,
       "btc_holdings": 640418,
-      "btc_nav": 69840637694
+      "btc_nav": 69249595922
     },
     {
       "date": "2025-10-22",
