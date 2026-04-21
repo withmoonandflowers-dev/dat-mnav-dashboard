@@ -1368,5 +1368,10 @@
     "close": 166.52,
     "market_cap": 62944560000,
     "shares_outstanding": 378000000
+  },
+  "2026-04-20": {
+    "close": 170.81,
+    "market_cap": 64566180000,
+    "shares_outstanding": 378000000
   }
 }
